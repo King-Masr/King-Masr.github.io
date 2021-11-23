@@ -7,27 +7,29 @@
   </head>
   <body>
     <div class="Serial">Your Password</div>
-    <div class="counts">
+    <section class="counts">
       <span class="Count" onclick="CountID('C8')" id="C8">8</span>
       <span class="Count" onclick="CountID('C10')" id="C10">10</span>
       <span class="Count" onclick="CountID('C12')" id="C12">12</span>
       <span class="Count" onclick="CountID('C15')" id="C15">15</span>
       <span class="Count" onclick="CountID('C20')" id="C20">20</span>
-    </div>
-    <form action="" method="get">
-      <label for="A">Capital</label>
-      <input type="checkbox" name="" id="A">
-      <br>
-      <label for="a">Small</label>
-      <input type="checkbox" name="" id="a">
-      <br>
-      <label for="N">Number</label>
-      <input type="checkbox" name="" id="N">
-      <br>
-      <label for="Z">@#$%</label>
-      <input type="checkbox" name="" id="Z">
-    </form>
-    <span class="Generate" onclick="GeneratePass('Aa1@')">Generate</span>
+    </section>
+    <section class="Generater">
+      <form action="" method="get">
+        <label for="A">Capital</label>
+        <input type="checkbox" name="" id="A">
+        <br>
+        <label for="a">Small</label>
+        <input type="checkbox" name="" id="a">
+        <br>
+        <label for="N">Number</label>
+        <input type="checkbox" name="" id="N">
+        <br>
+        <label for="Z">@#$%</label>
+        <input type="checkbox" name="" id="Z">
+      </form>
+      <span class="Generate" onclick="GeneratePass('Aa1@')">Generate</span>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
