@@ -41,9 +41,12 @@
   background-color: #f0440e;
 }
 .Generater {
-  width: max-content;
+  width: 200px;
   margin: 30px auto;
+  padding: 5px;
+  background-color: #f9f9f9;
+  position: relative;
 }
-.Generater label {
-  font-size: 2em;
+.Generater label::before {
+
 }
