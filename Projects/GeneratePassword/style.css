@@ -44,3 +44,9 @@
   width: max-content;
   margin: 30px auto;
 }
+.Generater label {
+  font-size: 1.3em;
+}
+.Generater input {
+  size: 1.3em;
+}
