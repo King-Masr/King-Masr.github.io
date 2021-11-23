@@ -24,18 +24,6 @@
   transition-timing-function: linear;
   user-select: none;
 }
-.btns {
-  width: max-content;
-  min-height: max-content;
-  margin: 20px 20%;
-  padding: 10px;
-}
-div .btn {
-  display: inline-block;
-  width: 25%;
-  min-height: 20px;
-  margin: 10px 10px;
-}
 .Generate {
   display: inline-block;
   width: max-content;
@@ -52,9 +40,6 @@ div .btn {
 .Generate:hover {
   background-color: #f0440e;
 }
-p.p {
-  width: fit-content;
-  height: 60px;
-  text-align: center;
-  margin: 10px auto;
+form {
+  display: block;
 }
