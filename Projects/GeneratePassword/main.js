@@ -8,7 +8,7 @@
 [7] Change Serial Element Content With The Serial Variable
 */
 window.onload = function () {
-  CountID("C15");
+  CountID("C12");
 };
 let Count = 0;
 let BTNA;
@@ -27,21 +27,15 @@ function CountID(ID) {
     BTNA = null;
     Count = 0;
   } else {
-    if (ID === "C8") {
-      Count = 8;
-      DelCount("C10", "C12", "C15");
-    }
-    if (ID === "C10") {
-      Count = 10;
-      DelCount("C8", "C12", "C15");
-    }
-    if (ID === "C12") {
-      Count = 12;
-      DelCount("C8", "C10", "C15");
-    }
-    if (ID === "C15") {
-      Count = 15;
-      DelCount("C8", "C10", "C12");
+    for (let i = 0; i < ID.length; i++) {
+      if (ID[i] == "C") {
+        continue;
+      }
+      if (i == 2) {
+        ID += ID[i];
+        break;
+      }
+      ID = ID[i];
     }
     BTN.style.border = "3px solid black";
     BTN.style.backgroundColor = "white";
