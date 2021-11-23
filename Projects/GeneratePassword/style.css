@@ -40,6 +40,6 @@
 .Generate:hover {
   background-color: #f0440e;
 }
-form {
+form input {
   display: block;
 }
