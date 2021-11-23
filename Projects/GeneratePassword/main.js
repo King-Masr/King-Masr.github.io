@@ -71,9 +71,11 @@ function GeneratePass(Query) {
   }
   let Serial = Characters[Math.floor(Math.random() * characters.length)];
   for (let i = 0; i < Count; i++) {
-    Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i == Count - 1) {
+    if (i == Count - 3) {
       SerialElement.innerHTML = Serial;
+      break;
     }
+    Serial += Characters[Math.floor(Math.random() * Characters.length)];
   }
 }
+console.log(Count)
