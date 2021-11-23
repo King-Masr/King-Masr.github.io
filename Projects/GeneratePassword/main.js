@@ -72,6 +72,7 @@ function GeneratePass(Query) {
   let Serial = Characters[Math.floor(Math.random() * characters.length)];
   for (let i = 2; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
+    console.log(Serial);
     if (i === Count) {
       SerialElement.innerHTML = Serial;
     }
