@@ -33,7 +33,7 @@ function CountID(ID) {
   } else {
     BTNA = ID;
     DelCount(ID);
-    if (ID.length === 2) {
+    if (ID[1] == "8") {
       Count = ID[1];
     } else {
       Count = `${ID[1]}${ID[2]}`;
