@@ -70,9 +70,9 @@ function GeneratePass(Query) {
     Characters = "0123456789";
   }
   let Serial = Characters[Math.floor(Math.random() * characters.length)];
-  for (let i = 2; i < Count; i++) {
+  for (let i = 0; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i === Count) {
+    if (i == Count - 2) {
       SerialElement.innerHTML = Serial;
     }
   }
