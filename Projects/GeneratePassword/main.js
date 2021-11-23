@@ -39,7 +39,7 @@ function CountID(ID) {
       }
       if (i == 2) {
         ID += ID[i];
-        Count = ID;
+        Count = ID[0] + ID[1];
         break;
       }
       ID = ID[i];
