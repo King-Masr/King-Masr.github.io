@@ -37,12 +37,12 @@ function CountID(ID) {
       if (ID[i] == "C") {
         continue;
       }
-      ID = ID[i];
       if (i == 2) {
         ID += ID[i];
         Count = ID + ID[1];
         break;
       }
+      ID = ID[i];
     }
     BTN.style.border = "3px solid black";
     BTN.style.backgroundColor = "white";
