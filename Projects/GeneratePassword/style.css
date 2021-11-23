@@ -40,3 +40,7 @@
 .Generate:hover {
   background-color: #f0440e;
 }
+.Generater {
+  width: max-content;
+  margin: 30px auto;
+}
