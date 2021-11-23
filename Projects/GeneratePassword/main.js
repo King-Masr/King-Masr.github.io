@@ -65,10 +65,10 @@ function GeneratePass(Query) {
   }
   let Serial = characters[Math.floor(Math.random() * characters.length)];
   for (let i = 0; i < Count; i++) {
-    if (i == Count - 1) {
+    Serial += Characters[Math.floor(Math.random() * Characters.length)];
+    if (i === Count) {
       SerialElement.innerHTML = Serial;
       break;
     }
-    Serial += Characters[Math.floor(Math.random() * Characters.length)];
   }
 }
