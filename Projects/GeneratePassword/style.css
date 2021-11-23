@@ -1,0 +1,60 @@
+.Serial {
+  width: 300px;
+  padding: 20px;
+  background-color: #eee;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  height: 50px;
+}
+.counts {
+  min-width: 300px;
+  margin: 30px 0 30px 27%;
+}
+.Count {
+  text-align: center;
+  font: 2em sans-serif;
+  background-color: #fff;
+  margin: 0 5%;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+  user-select: none;
+}
+.btns {
+  width: max-content;
+  min-height: max-content;
+  margin: 20px 20%;
+  padding: 10px;
+}
+div .btn {
+  display: inline-block;
+  width: 25%;
+  min-height: 20px;
+  margin: 10px 10px;
+}
+.Generate {
+  display: inline-block;
+  width: max-content;
+  margin: 20px auto;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+.Generate:hover {
+  background-color: #f0440e;
+}
+p.p {
+  width: fit-content;
+  height: 60px;
+  text-align: center;
+  margin: 10px auto;
+}
