@@ -31,6 +31,7 @@ function CountID(ID) {
     BTNA = null;
     Count = 0;
   } else {
+    BTNA = ID;
     DelCount(ID);
     for (let i = 0; i < ID.length; i++) {
       if (ID[i] == "C") {
@@ -44,7 +45,6 @@ function CountID(ID) {
     }
     BTN.style.border = "3px solid black";
     BTN.style.backgroundColor = "white";
-    BTNA = ID;
   }
 }
 function GeneratePass(Query) {
