@@ -16,7 +16,7 @@ function DelCount(ID) {
   let Btns = ["C8", "C10", "C12", "C15", "C20"];
   for (let i = 0; i < Btns.length; i++) {
     if (Btns[i] == ID) {
-      continue
+      continue;
     }
     let BTN = document.getElementById(Btns[i]);
     BTN.style.border = "0px solid black";
@@ -31,6 +31,7 @@ function CountID(ID) {
     BTNA = null;
     Count = 0;
   } else {
+    DelCount(ID);
     for (let i = 0; i < ID.length; i++) {
       if (ID[i] == "C") {
         continue;
@@ -41,7 +42,6 @@ function CountID(ID) {
       }
       ID = ID[i];
     }
-    DelCount(ID);
     BTN.style.border = "3px solid black";
     BTN.style.backgroundColor = "white";
     BTNA = ID;
