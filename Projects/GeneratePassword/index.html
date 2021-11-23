@@ -14,28 +14,17 @@
       <span class="Count" onclick="CountID('C15')" id="C15">15</span>
       <span class="Count" onclick="CountID('C20')" id="C20">20</span>
     </div>
-    <div class="btns">
-      <div class="btn">
-        <span class="Generate" onclick="GeneratePass('Aa1@')">Generate</span>
-        <p class="p">Capital And Small And Numbers And @#$</p>
-      </div>
-      <div class="btn">
-        <span class="Generate" onclick="GeneratePass('A1@')">Generate</span>
-        <p class="p">Capital And Numbers And @#$</p>
-      </div>
-      <div class="btn">
-        <span class="Generate" onclick="GeneratePass('A-1')">Generate</span>
-        <p class="p">Serial Number</p>
-      </div>
-      <div class="btn">
-        <span class="Generate" onclick="GeneratePass('Aa')">Generate</span>
-        <p class="p">Token</p>
-      </div>
-      <div class="btn">
-        <span class="Generate" onclick="GeneratePass('1')">Generate</span>
-        <p class="p">Just Numbers</p>
-      </div>
-    </div>
+    <form action="" method="get">
+      <label for="A">Capital</label>
+      <input type="checkbox" name="" id="A">
+      <label for="a">Small</label>
+      <input type="checkbox" name="" id="a">
+      <label for="N">Number</label>
+      <input type="checkbox" name="" id="N">
+      <label for="Z">@#$%</label>
+      <input type="checkbox" name="" id="Z">
+    </form>
+    <span class="Generate" onclick="GeneratePass('Aa1@')">Generate</span>
     <script src="main.js"></script>
   </body>
 </html>
