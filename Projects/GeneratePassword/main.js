@@ -63,10 +63,10 @@ function GeneratePass(Query) {
   if (Query === "1") {
     Characters = "0123456789";
   }
-  let Serial = characters[Math.floor(Math.random() * characters.length)];
+  let Serial = Characters[Math.floor(Math.random() * characters.length)];
   for (let i = 0; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i == Count - 1) {
+    if (i <= Count) {
       SerialElement.innerHTML = Serial;
       break;
     }
