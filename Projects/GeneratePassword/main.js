@@ -33,16 +33,10 @@ function CountID(ID) {
   } else {
     BTNA = ID;
     DelCount(ID);
-    for (let i = 0; i < ID.length; i++) {
-      if (ID[i] == "C") {
-        continue;
-      }
-      if (i == 2) {
-        ID += ID[i];
-        Count = ID + ID[1];
-        break;
-      }
-      ID = ID[i];
+    if (ID.length === 2) {
+      Count = ID[1];
+    } else {
+      Count = `${ID[1]}${ID[2]}`;
     }
     BTN.style.border = "3px solid black";
     BTN.style.backgroundColor = "white";
