@@ -10,7 +10,7 @@
   height: 50px;
 }
 .counts {
-  min-width: 300px;
+  min-width: max-content;
   margin: 30px 0 30px 27%;
   padding: 10px;
   background-color: thistle;
