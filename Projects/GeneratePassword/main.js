@@ -42,32 +42,36 @@ function CountID(ID) {
     BTN.style.backgroundColor = "white";
   }
 }
-function GeneratePass(Query) {
-  let SerialElement = document.querySelector(".Serial");
+function GeneratePass() {
+  let serialElement = document.querySelector(".Serial");
+  let checkBoxCapital = document.querySelector("#A");
+  let checkBoxSmall = document.querySelector("#a");
+  let checkBoxNumber = document.querySelector("#N");
+  let checkBoxCode = document.querySelector("#C");
   let Characters = "";
-  let characters = "";
   if (Count === 0) {
-    SerialElement.innerHTML = "Choose Number First";
+    serialElement.innerHTML = "Choose Number First";
     return false;
   }
-  if (Query === "Aa1@") {
-    Characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`~!@#$%^&*()_+-=/<>|[],.:0123456789";
-    characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (checkBoxCapital.checked === true) {
+    Characters +=
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
-  if (Query === "A1@") {
-    Characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^&*()_+-=/<>|[],.:0123456789";
-    characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (checkBoxSmall.checked === true) {
+    Characters +=
+      "abcdefghijklmnopqrstuvwxyz";
   }
-  if (Query === "1") {
-    Characters = "0123456789";
+  if (checkBoxNumber.checked === true) {
+    Characters += "0123456789";
   }
-  let Serial = Characters[Math.floor(Math.random() * characters.length)];
+  if (checkBoxCode.checked === true) {
+    Characters += "`~!@#$%^&*()_+-=/<>|[],.:";
+  }
+  let Serial = Characters[Math.floor(Math.random() * Characters.length)];
   for (let i = 2; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
     if (i === Count) {
-      SerialElement.innerHTML = Serial;
+      serialElement.innerHTML = Serial;
       break;
     }
   }
