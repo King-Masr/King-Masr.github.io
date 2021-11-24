@@ -47,9 +47,17 @@
   background-color: #f9f9f9;
   position: relative;
 }
+.Generater label {
+  position: relative;
+}
 .Generater label::before {
   content: "";
   width: 16px;
   height: 16px;
   border: 0.1mm solid gray;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
 }
