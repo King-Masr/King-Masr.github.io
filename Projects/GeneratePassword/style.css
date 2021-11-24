@@ -60,6 +60,7 @@
 }
 .Generater label {
   padding: 25px;
+  margin: 0 auto;
   position: relative;
 }
 .Generater label::before {
