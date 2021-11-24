@@ -44,15 +44,14 @@
   background-color: #f0440e;
 }
 .Generater {
-  width: 200px;
+  min-width: 200px;
   margin: 30px auto;
   padding: 10px;
   background-color: #f9f9f9;
   position: relative;
 }
 .Generater div {
-  margin: 10px auto;
-  padding: 5px 0;
+  margin: 10px 20%;
 }
 .Generater input[type="checkbox"] {
   -webkit-appearance: none;
@@ -60,7 +59,6 @@
 }
 .Generater label {
   padding: 25px;
-  margin: 0 auto;
   position: relative;
 }
 .Generater label::before {
