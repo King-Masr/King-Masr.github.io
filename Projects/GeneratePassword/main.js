@@ -48,7 +48,7 @@ function GeneratePass() {
   let checkBoxSmall = document.querySelector("#a");
   let checkBoxNumber = document.querySelector("#N");
   let checkBoxCode = document.querySelector("#C");
-  let Characters = "";
+  let Characters = "aaaaaaa";
   if (Count === 0) {
     serialElement.innerHTML = "Choose Number First";
     return false;
