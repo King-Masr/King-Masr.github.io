@@ -59,8 +59,8 @@
   appearance: none;
 }
 .Generater label {
-  padding: 25px;
-  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 .Generater label::before {
   content: "";
@@ -81,7 +81,7 @@
   height: 12px;
   position: absolute;
   left: 5px;
-  top: 40%;
+  top: 4px;
 }
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   opacity: 0.2;
