@@ -51,7 +51,7 @@
   position: relative;
 }
 .Generater div {
-  margin: 5px auto;
+  margin: 10px auto;
   padding: 5px 0;
 }
 .Generater input[type="checkbox"] {
@@ -69,7 +69,7 @@
   border: 0.5mm solid gray;
   position: absolute;
   left: 0;
-  top: 70%;
+  top: 90%;
   transform: translateY(-50%);
   background: white;
 }
