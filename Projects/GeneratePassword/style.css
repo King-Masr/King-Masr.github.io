@@ -48,6 +48,9 @@
   background-color: #f9f9f9;
   position: relative;
 }
+.Generater br {
+  margin: 30px auto;
+}
 .Generater input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
