@@ -48,18 +48,20 @@ function GeneratePass() {
   let checkBoxSmall = document.querySelector("#a");
   let checkBoxNumber = document.querySelector("#N");
   let checkBoxCode = document.querySelector("#C");
-  let Characters = "aaaaaaa";
+  let Characters = "";
   if (Count === 0) {
     serialElement.innerHTML = "Choose Number First";
     return false;
   }
+  if (checkBoxCapital.checked === false && checkBoxSmall.checked === false && checkBoxNumber.checked === false && checkBoxCode.checked === false) {
+    serialElement.innerHTML = "Choose Kind Of Characters First";
+    return false;
+  }
   if (checkBoxCapital.checked === true) {
-    Characters +=
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    Characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
   if (checkBoxSmall.checked === true) {
-    Characters +=
-      "abcdefghijklmnopqrstuvwxyz";
+    Characters += "abcdefghijklmnopqrstuvwxyz";
   }
   if (checkBoxNumber.checked === true) {
     Characters += "0123456789";
@@ -67,7 +69,7 @@ function GeneratePass() {
   if (checkBoxCode.checked === true) {
     Characters += "`~!@#$%^&*()_+-=/<>|[],.:";
   }
-  let Serial = Characters[Math.floor(Math.random() * Characters.length)];
+  let Serial = "";
   for (let i = 2; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
     if (i === Count) {
