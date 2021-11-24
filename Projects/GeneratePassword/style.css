@@ -12,6 +12,7 @@
 .counts {
   min-width: 300px;
   margin: 30px 0 30px 27%;
+  padding: 10px;
   background-color: thistle;
 }
 .Count {
