@@ -69,7 +69,7 @@
   border: 0.5mm solid gray;
   position: absolute;
   left: 0;
-  top: 90%;
+  top: 60%;
   transform: translateY(-50%);
   background: white;
 }
