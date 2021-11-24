@@ -46,7 +46,7 @@
 .Generater {
   width: 200px;
   margin: 30px auto;
-  padding: 5px;
+  padding: 10px;
   background-color: #f9f9f9;
   position: relative;
 }
@@ -77,11 +77,11 @@
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   content: "";
   background-color: blue;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   position: absolute;
-  left: 6px;
-  top: 30px;
+  left: 5px;
+  top: 40%;
 }
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   opacity: 0.2;
