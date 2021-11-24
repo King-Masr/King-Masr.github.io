@@ -12,6 +12,7 @@
 .counts {
   min-width: 300px;
   margin: 30px 0 30px 27%;
+  background-color: thistle;
 }
 .Count {
   text-align: center;
@@ -47,7 +48,12 @@
   background-color: #f9f9f9;
   position: relative;
 }
+.Generater input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
 .Generater label {
+  padding: 25px;
   position: relative;
 }
 .Generater label::before {
@@ -60,4 +66,20 @@
   top: 50%;
   transform: translateY(-50%);
   background: white;
+}
+.Generater input[type="checkbox"]:checked + label::after,
+.Generater input[type="checkbox"]:not(:checked):hover + label::after {
+  content: "";
+  background-color: blue;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.Generater input[type="checkbox"]:not(:checked):hover + label::after {
+  opacity: 0.2;
+}
+.Generater input[type="checkbox"]:checked + label {
+  color: blue;
 }
