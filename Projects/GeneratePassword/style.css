@@ -30,7 +30,7 @@
 .Generate {
   display: inline-block;
   width: max-content;
-  margin: 20px auto;
+  margin: 20px 25%;
   background-color: #ff5722;
   color: white;
   padding: 10px 20px;
@@ -64,12 +64,12 @@
 }
 .Generater label::before {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 0.5mm solid gray;
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   background: white;
 }
@@ -77,11 +77,11 @@
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   content: "";
   background-color: blue;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 6px;
+  top: 30px;
 }
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   opacity: 0.2;
