@@ -15,8 +15,8 @@ body {
   height: 50px;
 }
 .counts {
-  min-width: max-content;
-  max-width: (max-content + 50);
+  min-width: 30%;
+  max-width: 40%;
   margin: 30px auto;
   padding: 25px;
   background-color: thistle;
