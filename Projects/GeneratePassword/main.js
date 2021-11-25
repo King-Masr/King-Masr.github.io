@@ -9,7 +9,15 @@
 */
 window.onload = function () {
   CountID("C12");
+  let SerialBtn = document.getElementById("#S");
+  SerialBtn.onclick = function () {
+    document.getElementById("A").spellcheck.valueOf(false)
+    document.getElementById("a").spellcheck.valueOf(false)
+    document.getElementById("N").spellcheck.valueOf(false)
+    document.getElementById("C").spellcheck.valueOf(false)
+  };
 };
+
 let Count = 0;
 let BTNA;
 function DelCount(ID) {
@@ -53,7 +61,12 @@ function GeneratePass() {
     serialElement.innerHTML = "Choose Number First";
     return false;
   }
-  if (checkBoxCapital.checked === false && checkBoxSmall.checked === false && checkBoxNumber.checked === false && checkBoxCode.checked === false) {
+  if (
+    checkBoxCapital.checked === false &&
+    checkBoxSmall.checked === false &&
+    checkBoxNumber.checked === false &&
+    checkBoxCode.checked === false
+  ) {
     serialElement.innerHTML = "Choose Kind Of Characters First";
     return false;
   }
