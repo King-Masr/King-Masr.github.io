@@ -7,14 +7,27 @@
 [6] Loop x Count
 [7] Change Serial Element Content With The Serial Variable
 */
+let serialElement = document.querySelector(".Serial");
+let checkBoxCapital = document.querySelector("#A");
+let checkBoxSmall = document.querySelector("#a");
+let checkBoxNumber = document.querySelector("#N");
+let checkBoxCode = document.querySelector("#C");
+let checkBoxSerial = document.querySelector("#S");
 window.onload = function () {
   CountID("C12");
-  let SerialBtn = document.getElementById("S");
-  SerialBtn.onclick = function () {
-    document.getElementById("A").click();
-    document.getElementById("a").click();
-    document.getElementById("N").click();
-    document.getElementById("C").click();
+  checkBoxSerial.onclick = function () {
+    if (checkBoxCapital.checked === true) {
+      checkBoxCapital.click()
+    }
+    if (checkBoxSmall.checked === true) {
+      checkBoxSmall.click()
+    }
+    if (checkBoxNumber.checked === true) {
+      checkBoxNumber.click()
+    }
+    if (checkBoxCode.checked === true) {
+      checkBoxCode.click()
+    }
   };
 };
 
@@ -51,11 +64,6 @@ function CountID(ID) {
   }
 }
 function GeneratePass() {
-  let serialElement = document.querySelector(".Serial");
-  let checkBoxCapital = document.querySelector("#A");
-  let checkBoxSmall = document.querySelector("#a");
-  let checkBoxNumber = document.querySelector("#N");
-  let checkBoxCode = document.querySelector("#C");
   let Characters = "";
   if (Count === 0) {
     serialElement.innerHTML = "Choose Number First";
