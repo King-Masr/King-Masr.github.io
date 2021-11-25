@@ -1,3 +1,8 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff5722;
+  font-size: 2em;
+}
 .Serial {
   width: 300px;
   padding: 20px;
