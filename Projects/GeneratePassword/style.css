@@ -23,7 +23,6 @@ body {
 }
 .Count {
   text-align: center;
-  font: 2em sans-serif;
   background-color: #fff;
   margin: 0 3%;
   padding: 5px 5px;
@@ -58,7 +57,7 @@ body {
 .Generater div {
   width: 45%;
   margin: 10px auto;
-  position: relative;
+  /* position: relative; */
 }
 .Generater input[type="checkbox"] {
   -webkit-appearance: none;
