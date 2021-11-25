@@ -90,6 +90,7 @@ function GeneratePass() {
   if (checkBoxCode.checked === true) {
     Characters += "`~!@#$%^&*()_+-=/<>|[],.:";
   }
+  console.log(Characters);
   let Serial = "";
   for (let i = 2; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
