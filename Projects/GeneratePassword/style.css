@@ -3,6 +3,9 @@ body {
   background-color: #ff5722;
   font-size: 1.5em;
 }
+.Password {
+  position: relative;
+}
 .Serial {
   width: 50%;
   padding: 20px;
@@ -14,12 +17,14 @@ body {
   font-weight: bold;
   height: 50px;
 }
-.copy {
+.Copy {
+  display: none;
   text-align: center;
   font-size: 10px;
   font-style: italic;
+  position: absolute;
 }
-.counts {
+.Counts {
   min-width: 20%;
   max-width: 40%;
   margin: 30px auto;
