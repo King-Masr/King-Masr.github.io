@@ -15,7 +15,7 @@ body {
   height: 50px;
 }
 .counts {
-  min-width: 30%;
+  min-width: 20%;
   max-width: 40%;
   margin: 30px auto;
   padding: 25px;
@@ -23,6 +23,7 @@ body {
 }
 .Count {
   text-align: center;
+  font: 2em sans-serif;
   background-color: #fff;
   margin: 0 3%;
   padding: 5px 5px;
