@@ -10,7 +10,7 @@
 window.onload = function () {
   CountID("C12");
   let SerialBtn = document.getElementById("#S");
-  SerialBtn.onclick = function () {
+  SerialBtn.onselect = function () {
     document.getElementById("A").spellcheck.valueOf(false)
     document.getElementById("a").spellcheck.valueOf(false)
     document.getElementById("N").spellcheck.valueOf(false)
