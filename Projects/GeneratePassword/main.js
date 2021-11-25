@@ -94,7 +94,7 @@ function GeneratePass() {
   let Serial = "";
   for (let i = 0; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i === Count) {
+    if (i = Count) {
       serialElement.innerHTML = Serial;
       break;
     }
