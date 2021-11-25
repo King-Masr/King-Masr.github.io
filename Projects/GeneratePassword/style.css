@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ff5722;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .Serial {
   width: 300px;
@@ -16,7 +16,7 @@ body {
 }
 .counts {
   min-width: max-content;
-  max-width: 37%;
+  max-width: (max-content + 50);
   margin: 30px auto;
   padding: 25px;
   background-color: thistle;
@@ -49,9 +49,9 @@ body {
   background-color: #f0440e;
 }
 .Generater {
-  width: 220px;
+  width: 300px;
   margin: 30px auto;
-  padding: 10px;
+  padding: 20px;
   background-color: #f9f9f9;
   position: relative;
 }
