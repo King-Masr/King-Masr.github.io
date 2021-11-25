@@ -53,10 +53,10 @@ body {
   margin: 30px auto;
   padding: 20px;
   background-color: #f9f9f9;
-  /* position: relative; */
 }
 .Generater div {
-  width: 45%;
+  min-width: 40%;
+  max-width: 70%;
   margin: 10px auto;
   position: relative;
 }
