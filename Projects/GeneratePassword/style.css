@@ -4,10 +4,10 @@ body {
   font-size: 1.5em;
 }
 .Serial {
-  width: 300px;
+  width: 50%;
   padding: 20px;
   background-color: #eee;
-  margin: 40px auto 0;
+  margin: 40px auto;
   border-radius: 4px;
   text-align: center;
   font-size: 22px;
@@ -53,12 +53,12 @@ body {
   margin: 30px auto;
   padding: 20px;
   background-color: #f9f9f9;
-  position: relative;
+  /* position: relative; */
 }
 .Generater div {
   width: 45%;
   margin: 10px auto;
-  /* position: relative; */
+  position: relative;
 }
 .Generater input[type="checkbox"] {
   -webkit-appearance: none;
@@ -89,7 +89,7 @@ body {
   height: 12px;
   position: absolute;
   left: 5px;
-  top: 3px;
+  top: 8px;
 }
 .Generater input[type="checkbox"]:not(:checked):hover + label::after {
   opacity: 0.2;
