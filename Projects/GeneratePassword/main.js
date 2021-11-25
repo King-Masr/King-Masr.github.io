@@ -9,14 +9,15 @@
 */
 window.onload = function () {
   CountID("C12");
+  let SerialBtn = document.getElementById("#S");
+  SerialBtn.onclick = function () {
+    document.getElementById("A").spellcheck.valueOf(false)
+    document.getElementById("a").spellcheck.valueOf(false)
+    document.getElementById("N").spellcheck.valueOf(false)
+    document.getElementById("C").spellcheck.valueOf(false)
+  };
 };
-let SerialBtn = document.getElementById("#S");
-SerialBtn.onpointerenter = function () {
-  document.getElementById("A").spellcheck.valueOf(false)
-  document.getElementById("a").spellcheck.valueOf(false)
-  document.getElementById("N").spellcheck.valueOf(false)
-  document.getElementById("C").spellcheck.valueOf(false)
-};
+
 let Count = 0;
 let BTNA;
 function DelCount(ID) {
