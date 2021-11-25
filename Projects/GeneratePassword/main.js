@@ -64,7 +64,6 @@ function CountID(ID) {
   }
 }
 function GeneratePass() {
-  let Characters = "";
   if (Count === 0) {
     serialElement.innerHTML = "Choose Number First";
     return false;
@@ -78,6 +77,7 @@ function GeneratePass() {
     serialElement.innerHTML = "Choose Kind Of Characters First";
     return false;
   }
+  let Characters = "";
   if (checkBoxCapital.checked === true) {
     Characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
@@ -94,7 +94,7 @@ function GeneratePass() {
   let Serial = "";
   for (let i = 0; i < Count; i++) {
     Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i = Count) {
+    if (i == Count - 1) {
       serialElement.innerHTML = Serial;
       break;
     }
