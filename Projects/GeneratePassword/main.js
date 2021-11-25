@@ -9,12 +9,12 @@
 */
 window.onload = function () {
   CountID("C12");
-  let SerialBtn = document.getElementById("#S");
+  let SerialBtn = document.getElementById("S");
   SerialBtn.onclick = function () {
-    document.getElementById("A").spellcheck.valueOf(false)
-    document.getElementById("a").spellcheck.valueOf(false)
-    document.getElementById("N").spellcheck.valueOf(false)
-    document.getElementById("C").spellcheck.valueOf(false)
+    document.getElementById("A").click();
+    document.getElementById("a").click();
+    document.getElementById("N").click();
+    document.getElementById("C").click();
   };
 };
 
