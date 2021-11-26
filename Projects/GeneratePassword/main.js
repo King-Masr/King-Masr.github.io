@@ -26,6 +26,8 @@ window.onload = function () {
     }
     if (checkBoxSerial.checked === false) {
       document.getElementById("Code").style.display = "none";
+    } else if (checkBoxSerial.checked === true) {
+      document.getElementById("Code").style.display = "";
     }
   };
 };
