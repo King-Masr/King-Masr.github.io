@@ -28,6 +28,8 @@ body {
   background-color: #d8daff;
   border: 0.01px solid black;
   border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
   transition: 0.7s;
   position: absolute;
   top: 85%;
