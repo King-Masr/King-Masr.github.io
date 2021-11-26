@@ -34,7 +34,7 @@ window.onload = function () {
     }
   };
   copyBtn.onclick = function () {
-    Clipboard(serialElement)
+    copy(serialElement.innerText);
   }
 };
 let Count = 0;
