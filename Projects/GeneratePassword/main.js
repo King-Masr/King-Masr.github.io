@@ -8,6 +8,7 @@
 [7] Change Serial Element Content With The Serial Variable
 */
 let serialElement = document.querySelector(".Serial");
+let copyBtn = document.querySelector(".Copy");
 let checkBoxCapital = document.querySelector("#A");
 let checkBoxSmall = document.querySelector("#a");
 let checkBoxNumber = document.querySelector("#N");
@@ -32,8 +33,10 @@ window.onload = function () {
       document.getElementById("Code").style.visibility = "visible";
     }
   };
+  copyBtn.onclick = function () {
+    Clipboard(serialElement)
+  }
 };
-
 let Count = 0;
 let BTNA;
 function DelCount(ID) {
