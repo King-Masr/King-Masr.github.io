@@ -25,8 +25,10 @@ window.onload = function () {
       checkBoxCode.click();
     }
     if (checkBoxSerial.checked === true) {
+      document.getElementById("Code").style.opacity = 0;
       document.getElementById("Code").style.visibility = "hidden";
     } else if (checkBoxSerial.checked === false) {
+      document.getElementById("Code").style.visibility = 1;
       document.getElementById("Code").style.visibility = "visible";
     }
   };
