@@ -68,6 +68,7 @@ body {
   min-width: 40%;
   max-width: 70%;
   margin: 10px auto;
+  transition: 0.4s;
   position: relative;
 }
 .Generater input[type="checkbox"] {
