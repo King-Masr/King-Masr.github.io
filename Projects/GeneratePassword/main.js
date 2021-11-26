@@ -27,7 +27,7 @@ window.onload = function () {
     if (checkBoxSerial.checked === true) {
       document.getElementById("Code").style.visibility = "hidden";
     } else if (checkBoxSerial.checked === false) {
-      document.getElementById("Code").style.visibility = "visibile";
+      document.getElementById("Code").style.visibility = "visible";
     }
   };
 };
