@@ -49,22 +49,6 @@ body {
   transition-timing-function: linear;
   user-select: none;
 }
-.Generate {
-  display: inline-block;
-  width: max-content;
-  margin: 15px 25%;
-  background-color: #ff5722;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-  user-select: none;
-}
-.Generate:hover {
-  background-color: #f0440e;
-}
 .Generater {
   width: 45%;
   margin: 10px auto;
@@ -115,4 +99,20 @@ body {
 }
 .Generater input[type="checkbox"]:checked + label {
   color: blue;
+}
+.Generate {
+  display: inline-block;
+  width: max-content;
+  margin: 15px 25%;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+.Generate:hover {
+  background-color: #f0440e;
 }
