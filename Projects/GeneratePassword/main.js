@@ -23,8 +23,8 @@ window.onload = function () {
     }
     if (checkBoxCode.checked === true) {
       checkBoxCode.click();
-      checkBoxCode.style.cursor = "not-allowed";
     }
+    checkBoxCode.style.display = "none";
   };
 };
 
