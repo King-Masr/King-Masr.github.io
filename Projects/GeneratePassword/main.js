@@ -24,7 +24,9 @@ window.onload = function () {
     if (checkBoxCode.checked === true) {
       checkBoxCode.click();
     }
-    document.getElementById("Code").style.display = "none";
+    if (checkBoxSerial.checked === false) {
+      document.getElementById("Code").style.display = "none";
+    }
   };
 };
 
