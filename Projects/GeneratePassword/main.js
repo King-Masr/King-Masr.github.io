@@ -114,6 +114,7 @@ function GeneratePass() {
       Serial += Characters[Math.floor(Math.random() * Characters.length)];
       if (i == Count - 1) {
         serialElement.innerHTML = Serial;
+        copyBtn.style.display = "block";
         break;
       }
     }
