@@ -16,7 +16,7 @@ let checkBoxSerial = document.querySelector("#S");
 window.onload = function () {
   CountID("C12");
   checkBoxSerial.onclick = function () {
-    if (checkBoxCapital.checked === true) {
+    if (checkBoxCapital.checked === false) {
       checkBoxCapital.click()
     }
     if (checkBoxSmall.checked === true) {
@@ -90,13 +90,25 @@ function GeneratePass() {
   if (checkBoxCode.checked === true) {
     Characters += "`~!@#$%^&*()_+-=/<>|[],.:";
   }
-  console.log(Characters);
   let Serial = "";
-  for (let i = 0; i < Count; i++) {
-    Serial += Characters[Math.floor(Math.random() * Characters.length)];
-    if (i == Count - 1) {
-      serialElement.innerHTML = Serial;
-      break;
+  if (checkBoxSerial.checked === false) {
+    for (let i = 0; i < Count; i++) {
+      Serial += Characters[Math.floor(Math.random() * Characters.length)];
+      if (i == Count - 1) {
+        serialElement.innerHTML = Serial;
+        break;
+      }
+    }
+  } else if (checkBoxSerial.checked === true) {
+    for (let i = 0; i < Count; i++) {
+      if (i == 3 || i == 6 || i == 9 || i == 12 || i == 15 || i == 18) {
+        Serial += "-";
+      }
+      Serial += Characters[Math.floor(Math.random() * Characters.length)];
+      if (i == Count - 1) {
+        serialElement.innerHTML = Serial;
+        break;
+      }
     }
   }
 }
