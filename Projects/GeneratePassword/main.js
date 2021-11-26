@@ -17,7 +17,9 @@ window.onload = function () {
   CountID("C12");
   checkBoxSerial.onclick = function () {
     if (checkBoxCapital.checked === false) {
-      checkBoxCapital.click()
+      if (checkBoxSerial.checked === false) {
+        checkBoxCapital.click()
+      }
     }
     if (checkBoxSmall.checked === true) {
       checkBoxSmall.click()
