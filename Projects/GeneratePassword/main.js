@@ -25,9 +25,9 @@ window.onload = function () {
       checkBoxCode.click();
     }
     if (checkBoxSerial.checked === true) {
-      document.getElementById("Code").style.display = "none";
+      document.getElementById("Code").style.visibility = "hidden";
     } else if (checkBoxSerial.checked === false) {
-      document.getElementById("Code").style.display = "";
+      document.getElementById("Code").style.visibility = "visibile";
     }
   };
 };
