@@ -18,17 +18,12 @@ window.onload = function () {
   checkBoxSerial.onclick = function () {
     if (checkBoxCapital.checked === false) {
       if (checkBoxSerial.checked === true) {
-        checkBoxCapital.click()
+        checkBoxCapital.click();
       }
     }
-    if (checkBoxSmall.checked === true) {
-      checkBoxSmall.click()
-    }
-    if (checkBoxNumber.checked === true) {
-      checkBoxNumber.click()
-    }
     if (checkBoxCode.checked === true) {
-      checkBoxCode.click()
+      checkBoxCode.click();
+      checkBoxCode.style.cursor = "not-allowed";
     }
   };
 };
