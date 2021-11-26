@@ -24,7 +24,7 @@ window.onload = function () {
     if (checkBoxCode.checked === true) {
       checkBoxCode.click();
     }
-    checkBoxCode.style.display = "none";
+    document.getElementsByClassName("Code").style.display = "none";
   };
 };
 
