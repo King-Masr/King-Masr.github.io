@@ -107,7 +107,7 @@ body {
 .Generate {
   display: inline-block;
   width: max-content;
-  margin: 15px 25%;
+  margin: 15px auto;
   background-color: #ff5722;
   color: white;
   padding: 10px 20px;
