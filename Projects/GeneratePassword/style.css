@@ -4,12 +4,12 @@ body {
   font-size: 1.5em;
 }
 .Password {
-  width: 50%;
+  width: 55%;
   margin: 20px auto;
   position: relative;
 }
 .Serial {
-  width: 90%;
+  width: 80%;
   padding: 20px;
   background-color: #eee;
   margin: 40px auto;
@@ -40,8 +40,14 @@ body {
   min-width: 30%;
   max-width: 45%;
   margin: 10px auto;
-  padding: 20px;
+  padding: 15px;
   background-color: thistle;
+}
+.Counts div {
+  min-height: 60px;
+  width: 95%;
+  margin: auto;
+  padding: 5px;
 }
 .Count {
   text-align: center;
