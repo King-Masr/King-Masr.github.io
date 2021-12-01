@@ -75,7 +75,7 @@ header main > a {
 nav {
   display: flex;
 }
-nav > li > a {
+nav li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
