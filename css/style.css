@@ -63,7 +63,7 @@ header main {
   flex-wrap: wrap;
   position: relative;
 }
-header main a {
+header main > a {
   color: var(--main-color);
   font-size: 27px;
   font-weight: bold;
