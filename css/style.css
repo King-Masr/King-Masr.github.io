@@ -9,11 +9,23 @@
 body {
   font-family: 'Work Sans', sans-serif;
 }
+/* Small Screen */
 @media (min-width: 768px) {
-  .co
+  .container {
+    width: 750px;
+  }
 }
-/*  */
-/*  */
-/*  */
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 /*  */
 /*  */
