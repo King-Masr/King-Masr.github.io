@@ -1,7 +1,8 @@
 /* Global Variables */
 :root {
   --main-color: #4db0ff;
-  --main-color: #3585c7;
+  --main-color-alt: #3585c7;
+  --main-transition: 0.4s;
 }
 /* Global Rules */
 * {
@@ -50,4 +51,37 @@ ul {
 /* Website Header */
 header {
   background-color: white;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+header main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+header main a {
+  color: var(--main-color);
+  font-size: 27px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+nav > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  position: relative;
+  color: black;
+  padding: 0 30px;
+  transition: var(--main-transition);
 }
