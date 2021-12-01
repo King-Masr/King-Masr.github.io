@@ -106,13 +106,13 @@ nav > ul > li > a {
   transition: var(--main-transition);
 }
 @media (max-width: 767px) {
-  nav li > a {
+  nav > ul > li > a {
     padding: 10px;
     font-size: 14px;
     height: 40px;
   }
 }
-nav li > a::before {
+nav > ul > li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -122,11 +122,11 @@ nav li > a::before {
   left: -100%;
   transition: var(--main-transition);
 }
-nav li > a:hover {
+nav > ul > li > a:hover {
   color: var(--main-color);
   background-color: #dddddd;
 }
-nav li > a:hover::before {
+nav > ul > li > a:hover::before {
   left: 0;
 }
 main #mega-menu {
