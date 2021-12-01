@@ -150,7 +150,7 @@ nav li > a:hover::before {
   align-items: center;
   padding-bottom: 120px;
 }
-#landing .image img {
+#landing #image img {
   width: 600px;
   max-width: 100%;
 }
