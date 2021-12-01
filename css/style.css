@@ -93,7 +93,7 @@ nav li > a::before {
   height: 4px;
   background-color: var(--main-color);
   top: 0;
-  left: -100;
+  left: -100%;
   transition: var(--main-transition);
 }
 nav li > a:hover {
