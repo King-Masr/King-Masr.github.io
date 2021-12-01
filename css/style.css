@@ -2,7 +2,7 @@
 :root {
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
-  --main-transition: 0.4s;
+  --main-transition: 0.6s;
 }
 /* Global Rules */
 * {
