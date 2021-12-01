@@ -151,6 +151,20 @@ nav li > a:hover::before {
   align-items: center;
   padding-bottom: 120px;
 }
+#landing #text {
+  flex: 1;
+}
+#landing #text h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+#landing #text p {
+  font-size: 23px;
+  line-height: 1.7;
+  margin: 5px 0 0;
+  color: #666;
+}
 #landing #image img {
   width: 600px;
   max-width: 100%;
