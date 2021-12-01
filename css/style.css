@@ -72,7 +72,7 @@ header main > a {
   justify-content: center;
   align-items: center;
 }
-nav {
+nav > ul {
   display: flex;
 }
 nav li > a {
