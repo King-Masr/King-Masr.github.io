@@ -94,7 +94,7 @@ nav > ul {
     margin: auto;
   }
 }
-nav li > a {
+nav > ul > li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
