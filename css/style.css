@@ -83,5 +83,23 @@ nav li > a {
   position: relative;
   color: black;
   padding: 0 30px;
+  overflow: hidden;
   transition: var(--main-transition);
+}
+nav li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-color);
+  top: 0;
+  left: -100;
+  transition: var(--main-transition);
+}
+nav li > a:hover {
+  color: var(--main-color);
+  background-color: #dddddd;
+}
+nav li > a:hover::before {
+  left: 0;
 }
