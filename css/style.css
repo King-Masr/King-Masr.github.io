@@ -155,7 +155,7 @@ nav li > a:hover::before {
   max-width: 100%;
 }
 #landing a {
-
+  display: unset;
 }
 #landing a > i {
   color: var(--main-color);
