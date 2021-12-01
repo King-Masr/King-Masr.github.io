@@ -129,6 +129,22 @@ nav li > a:hover {
 nav li > a:hover::before {
   left: 0;
 }
+main #mega-menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  background-color: white;
+  border-bottom: 3px solid var(--main-color);
+  z-index: 100;
+  display: flex;
+  gap: 40px;
+  top: calc(100% + 50px);
+  transition: top var(--main-transition), opacity var(--main-transition);
+}
+#mega-menu section img {
+  max-width: 100%;
+}
 /* Landing */
 #landing {
   position: relative;
