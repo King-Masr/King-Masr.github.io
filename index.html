@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalise.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>King Masr</title>
   </head>
@@ -19,11 +19,52 @@
         <a href="">King Masr</a>
         <nav>
           <ul>
-            <li><a href="https://www.facebook.com/KingIMasr" target="_blank">Facebook</a></li>
-            <li><a href="https://www.twitter.com/KingIMasr" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/king-masr" target="_blank">Linked In</a></li>
-            <li><a href="https://t.me/King_Masr" target="_blank">Telegram</a></li>
-            <li><a href="#">Other Links</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Follow Me</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li>
+              <a href="#">Other Links</a>
+              <section id="mega-menu">
+                <section>
+                  <img src="imgs/megamenu.png" alt="Mega Menu Img">
+                </section>
+                <ul>
+                  <li>
+                    <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
+                  </li>
+                  <li>
+                    <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
+                  </li>
+                  <li>
+                    <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
+                  </li>
+                  <li>
+                    <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
+                  </li>
+                  <li>
+                    <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                  </li>
+                  <li>
+                    <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
+                  </li>
+                  <li>
+                    <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
+                  </li>
+                  <li>
+                    <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
+                  </li>
+                </ul>
+              </section>
+            </li>
           </ul>
         </nav>
       </main>
@@ -32,10 +73,15 @@
       <main>
         <section id="text">
           <h1>Hello. I am Aly</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe odio ipsum quos autem architecto, culpa tempore facere, incidunt libero mollitia reprehenderit? Obcaecati qui quo quod natus officiis quis blanditiis?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            saepe odio ipsum quos autem architecto, culpa tempore facere,
+            incidunt libero mollitia reprehenderit? Obcaecati qui quo quod natus
+            officiis quis blanditiis?
+          </p>
         </section>
         <section id="image">
-          <img src="imgs/landing-image.png" alt="landing-image">
+          <img src="imgs/landing-image.png" alt="landing-image" />
         </section>
       </main>
       <a href="#projects">
@@ -45,25 +91,26 @@
     <section id="projects"></section>
     <footer></footer>
     <div id="fb-root"></div>
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
+      var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "103839318756415");
       chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
+          xfbml: true,
+          version: "v12.0",
         });
       };
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, "script", "facebook-jssdk");
     </script>
     <script src="js/main.js"></script>
   </body>
