@@ -24,7 +24,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-.container {
+main {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -32,19 +32,19 @@ ul {
 }
 /* Small Screen */
 @media (min-width: 768px) {
-  .container {
+  main {
     width: 750px;
   }
 }
 /* Medium Screen */
 @media (min-width: 992px) {
-  .container {
+  main {
     width: 970px;
   }
 }
 /* Large Screen */
 @media (min-width: 1200px) {
-  .container {
+  main {
     width: 1170px;
   }
 }
