@@ -332,7 +332,15 @@ main #mega-menu {
 }
 #projects main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+#projects #box {
+  box-shadow: 0;
+}
+#projects #box img {
+  width: 100%;
+  max-width: 100%;
 }
 /* Animation */
 @keyframes leftToRight {
