@@ -48,6 +48,36 @@ main {
     width: 1170px;
   }
 }
+#main-title {
+  position: relative;
+  margin: 100px auto;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-size: 30px;
+  width: fit-content;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+#main-title::before, #main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#main-title::before {
+  left: -30px;
+}
+#main-title::after {
+  right: -30px;
+}
+#main-title:hover::before {
+  z-index: -1;
+  animation: leftToRight 0.5s linear forwards;
+}
 /* Website Header */
 header {
   background-color: white;
@@ -281,6 +311,19 @@ main #mega-menu {
   animation: bouncing 1.5s infinite;
 }
 /* Animation */
+@keyframes leftToRight {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
 @keyframes stairs {
   0%, 100% {
     top: 0;
