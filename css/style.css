@@ -3,8 +3,8 @@
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
   --main-transition: 0.5s;
-  --transition-delay: 1.5s;
-  --animation-time: 1.5s;
+  --transition-delay: 1s;
+  --animation-time: 1s;
 }
 /* Global Rules */
 * {
