@@ -3,6 +3,8 @@
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
   --main-transition: 0.5s;
+  --transition-delay: 2s;
+  --animation-time: 1.5s;
 }
 /* Global Rules */
 * {
@@ -58,6 +60,11 @@ main {
   z-index: 1;
   transition: var(--main-transition);
 }
+#main-title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: var(--transition-delay);
+}
 #main-title::before,
 #main-title::after {
   content: "";
@@ -77,11 +84,11 @@ main {
 }
 #main-title:hover::before {
   z-index: -1;
-  animation: leftToRight 0.5s linear forwards;
+  animation: leftToRight var(--animation-time) linear forwards;
 }
 #main-title:hover::after {
   z-index: -1;
-  animation: rightToLift 0.5s linear forwards;
+  animation: rightToLift var(--animation-time) linear forwards;
 }
 /* Website Header */
 header {
