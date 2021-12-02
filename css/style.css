@@ -3,6 +3,8 @@
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
   --main-transition: 0.5s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
   --transition-delay: 1s;
   --animation-time: 1s;
 }
@@ -52,7 +54,7 @@ main {
 }
 #main-title {
   position: relative;
-  margin: 100px auto;
+  margin: 0 auto 80px;
   padding: 10px 20px;
   border: 2px solid black;
   font-size: 30px;
@@ -244,7 +246,7 @@ main #mega-menu {
 #mega-menu li a i {
   margin-right: 10px;
 }
-/* Landing */
+/* Landing section */
 #landing {
   position: relative;
 }
@@ -321,6 +323,16 @@ main #mega-menu {
 }
 #landing a > i {
   animation: bouncing 1.5s infinite;
+}
+/* Project section */
+#projects {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+#projects main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 /* Animation */
 @keyframes leftToRight {
