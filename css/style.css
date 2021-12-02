@@ -150,17 +150,17 @@ main #mega-menu {
     display: none;
   }
 }
-#maga-menu ul {
+#mega-menu ul {
   min-width: 250px;
   flex: 1;
 }
-#maga-menu li {
+#mega-menu li {
   position: relative;
 }
-#maga-menu li:not(:last-child) {
+#mega-menu li:not(:last-child) {
   border-bottom: 1px solid #E9E6E6;
 }
-#maga-menu li::before {
+#mega-menu li::before {
   content: "";
   position: absolute;
   top: 0;
@@ -171,17 +171,17 @@ main #mega-menu {
   z-index: -1;
   transition: var(--main-transition);
 }
-#maga-menu li:hover::before {
+#mega-menu li:hover::before {
   width: 100%;
 }
-#maga-menu li a {
+#mega-menu li a {
   color: var(--main-color);
   padding: 15px;
   display: block;
   font-size: 18px;
   font-weight: bold;
 }
-#maga-menu li a i {
+#mega-menu li a i {
   margin-right: 10px;
 }
 /* Landing */
