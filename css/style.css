@@ -145,6 +145,45 @@ main #mega-menu {
 #mega-menu section img {
   max-width: 100%;
 }
+@media (max-width: 991px) {
+  #mega-menu section img {
+    display: none;
+  }
+}
+#maga-menu ul {
+  min-width: 250px;
+  flex: 1;
+}
+#maga-menu li {
+  position: relative;
+}
+#maga-menu li:not(:last-child) {
+  border-bottom: 1px solid #E9E6E6;
+}
+#maga-menu li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #FAFAFA;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+#maga-menu li:hover::before {
+  width: 100%;
+}
+#maga-menu li a {
+  color: var(--main-color);
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+#maga-menu li a i {
+  margin-right: 10px;
+}
 /* Landing */
 #landing {
   position: relative;
