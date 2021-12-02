@@ -336,7 +336,15 @@ main #mega-menu {
   gap: 40px;
 }
 #projects #box {
-  box-shadow: 0;
+  box-shadow: 0 2px 15px #0000001f;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+#projects #box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 2px 15px #00000025;
 }
 #projects #box img {
   width: 100%;
