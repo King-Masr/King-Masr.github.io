@@ -329,7 +329,7 @@ main #mega-menu {
     height: 100%;
   }
 }
-@keyframes rightToLeft {
+@keyframes rightToLift {
   50% {
     right: 0;
     width: 12px;
