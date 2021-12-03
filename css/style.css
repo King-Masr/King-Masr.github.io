@@ -332,7 +332,7 @@ main #mega-menu {
 }
 #projects main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
 #projects #box {
@@ -349,6 +349,34 @@ main #mega-menu {
 #projects #box img {
   width: 100%;
   max-width: 100%;
+}
+#projects #box #content {
+  padding: 20px;
+}
+#projects #box #content h3 {
+  margin: 0;
+}
+#projects #box #content p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+}
+#projects #box #info {
+  padding: 20px;
+  border-top: 1px solid #E6E6E7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#projects #box #info a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+#projects #box #info i {
+  color: var(--main-color);
+}
+#projects #box:hover #info i {
+  animation: arrowMove var(--animation-time) linear reverse infinite;
 }
 /* Animation */
 @keyframes leftToRight {
@@ -398,5 +426,10 @@ main #mega-menu {
   40%,
   60% {
     transform: translateY(-20px);
+  }
+}
+@keyframes arrowMove {
+  100% {
+    transform: translateX(10px);
   }
 }
