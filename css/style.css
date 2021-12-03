@@ -423,16 +423,16 @@ main #mega-menu {
 #followMe #box #image a {
   color: var(--main-color-alt);
 }
-#followMe #box #image i:hover {
-  color: #1877f2;
-} 
 #followMe #box #text a {
   color: black;
-} 
+}
 #followMe #box i {
   font-size: 1700%;
   user-select: none;
   transition: var(--main-transition);
+}
+#followMe #box i:hover {
+  color: #1877f2;
 }
 #followMe #box #image:hover i {
   transform: rotate(5deg) scale(1.1);
