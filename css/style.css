@@ -400,6 +400,7 @@ main #mega-menu {
 }
 #followMe #box #image {
   position: relative;
+  overflow: hidden;
 }
 #followMe #box #image::before {
   content: "";
@@ -407,7 +408,7 @@ main #mega-menu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #ffffff30;
   width: 10px;
   height: 10px;
   opacity: 0;
