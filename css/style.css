@@ -423,7 +423,7 @@ main #mega-menu {
 #followMe #box #image a {
   color: var(--main-color-alt);
 }
-#followMe #box #image a:hover i {
+#followMe #box #image i:hover {
   color: #1877f2;
 } 
 #followMe #box #text a {
