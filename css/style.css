@@ -407,7 +407,7 @@ main #mega-menu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d1d1d19f;
+  background-color: white;
   width: 10px;
   height: 10px;
   opacity: 0;
