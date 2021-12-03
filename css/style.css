@@ -374,6 +374,7 @@ main #mega-menu {
 }
 #projects #box #info i {
   color: var(--main-color);
+  transform: translateX(-70px);
 }
 #projects #box:hover #info i {
   animation: arrowMove var(--animation-time) linear reverse infinite;
