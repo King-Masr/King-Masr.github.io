@@ -374,7 +374,6 @@ main #mega-menu {
 }
 #projects #box #info i {
   color: var(--main-color);
-  transform: translateX(-70px);
 }
 #projects #box:hover #info i {
   animation: arrowMove var(--animation-time) linear reverse infinite;
@@ -416,21 +415,18 @@ main #mega-menu {
   }
 }
 @keyframes bouncing {
-  0%,
-  10%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 10%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-  40%,
-  60% {
+  40%, 60% {
     transform: translateY(-20px);
   }
 }
 @keyframes arrowMove {
-  100% {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40%, 60% {
     transform: translateX(10px);
   }
 }
