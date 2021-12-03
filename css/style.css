@@ -60,7 +60,9 @@ main {
   border: 2px solid black;
   font-size: 30px;
   width: fit-content;
+  cursor: default;
   z-index: 1;
+  user-select: none;
   transition: var(--main-transition);
 }
 #mainTitle:hover {
@@ -392,9 +394,23 @@ main #mega-menu {
   gap: 40px;
 }
 #followMe #box {
-  padding: 15px;
+  padding: 10px;
   background-color: white;
   box-shadow: 0 12px 20px #00000025, 0 2px 4px #00000020;
+}
+#followMe #box #image {
+  position: relative;
+}
+#followMe #box #image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  width: 1%;
+  height: 1%;
+  
 }
 #followMe #box img {
   max-width: 100%;
