@@ -420,6 +420,9 @@ main #mega-menu {
 #followMe #box #image:hover::before {
   animation: flashing var(--animation-time);
 }
+#followMe #box a {
+  text-decoration: none;
+}
 #followMe #box i {
   font-size: 1700%;
   user-select: none;
