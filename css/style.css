@@ -394,7 +394,7 @@ main #mega-menu {
 #followMe #box {
   padding: 15px;
   background-color: white;
-  box-shadow: 0 12px 20px;
+  box-shadow: 0 12px 20px #00000025, 0 2px 4px #00000020;
 }
 #followMe #box img {
   max-width: 100%;
