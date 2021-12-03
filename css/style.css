@@ -102,6 +102,8 @@ header {
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
   position: relative;
+  user-select: none;
+  cursor: default;
 }
 header main {
   display: flex;
@@ -155,6 +157,7 @@ nav > ul > li > a {
   color: black;
   padding: 0 30px;
   overflow: hidden;
+  user-select: none;
   transition: var(--main-transition);
 }
 @media (max-width: 767px) {
@@ -409,8 +412,8 @@ main #mega-menu {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff30;
-  width: 10px;
-  height: 10px;
+  width: 0;
+  height: 0;
   opacity: 0;
 }
 #followMe #box #image:hover::before {
@@ -418,6 +421,7 @@ main #mega-menu {
 }
 #followMe #box img {
   max-width: 100%;
+  user-select: none;
 }
 /* Animation */
 @keyframes leftToRight {
