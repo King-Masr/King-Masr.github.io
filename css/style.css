@@ -420,9 +420,15 @@ main #mega-menu {
 #followMe #box #image:hover::before {
   animation: flashing var(--animation-time);
 }
-#followMe #box a {
-  text-decoration: none;
+#followMe #box #image a {
+  color: var(--main-color-alt);
 }
+#followMe #box #image a:hover i {
+  color: #1877f2;
+} 
+#followMe #box #text a {
+  color: black;
+} 
 #followMe #box i {
   font-size: 1700%;
   user-select: none;
