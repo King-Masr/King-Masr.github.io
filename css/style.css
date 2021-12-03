@@ -7,7 +7,7 @@
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
   --transition-delay: 1s;
-  --animation-time: 1s;
+  --animation-time: 0.7s;
 }
 /* Global Rules */
 * {
@@ -407,10 +407,13 @@ main #mega-menu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
-  width: 1%;
-  height: 1%;
-  
+  background-color: #d1d1d19f;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+}
+#followMe #box #image:hover::before {
+  animation: flashing var(--animation-time);
 }
 #followMe #box img {
   max-width: 100%;
@@ -465,5 +468,15 @@ main #mega-menu {
   }
   40%, 60% {
     transform: translateX(10px);
+  }
+}
+@keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
   }
 }
