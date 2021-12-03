@@ -52,7 +52,7 @@ main {
     width: 1170px;
   }
 }
-#main-title {
+#mainTitle {
   position: relative;
   margin: 0 auto 80px;
   padding: 10px 20px;
@@ -62,13 +62,13 @@ main {
   z-index: 1;
   transition: var(--main-transition);
 }
-#main-title:hover {
+#mainTitle:hover {
   color: white;
   border: 2px solid white;
   transition-delay: var(--transition-delay);
 }
-#main-title::before,
-#main-title::after {
+#mainTitle::before,
+#mainTitle::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -78,17 +78,17 @@ main {
   top: 50%;
   transform: translateY(-50%);
 }
-#main-title::before {
+#mainTitle::before {
   left: -30px;
 }
-#main-title::after {
+#mainTitle::after {
   right: -30px;
 }
-#main-title:hover::before {
+#mainTitle:hover::before {
   z-index: -1;
   animation: leftToRight var(--animation-time) linear forwards;
 }
-#main-title:hover::after {
+#mainTitle:hover::after {
   z-index: -1;
   animation: rightToLift var(--animation-time) linear forwards;
 }
@@ -376,7 +376,7 @@ main #mega-menu {
   color: var(--main-color);
 }
 #projects #box:hover #info i {
-  animation: arrowMove var(--animation-time) linear reverse infinite;
+  animation: arrowMove var(--animation-time) linear infinite;
 }
 /* Animation */
 @keyframes leftToRight {
@@ -424,7 +424,7 @@ main #mega-menu {
 }
 @keyframes arrowMove {
   0%, 10%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
+    transform: translateX(-5px);
   }
   40%, 60% {
     transform: translateX(10px);
