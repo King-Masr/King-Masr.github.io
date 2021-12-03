@@ -415,6 +415,7 @@ main #mega-menu {
   width: 0;
   height: 0;
   opacity: 0;
+  z-index: 2;
 }
 #followMe #box #image:hover::before {
   animation: flashing var(--animation-time);
@@ -422,6 +423,10 @@ main #mega-menu {
 #followMe #box img {
   max-width: 100%;
   user-select: none;
+  transition: var(--main-transition);
+}
+#followMe #box #image:hover img {
+  transform: rotate(5deg) scale(1.1);
 }
 /* Animation */
 @keyframes leftToRight {
