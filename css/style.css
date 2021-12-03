@@ -102,8 +102,8 @@ header {
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
   position: relative;
-  user-select: none;
-  cursor: default;
+  /* user-select: none; */
+  /* cursor: default; */
 }
 header main {
   display: flex;
@@ -157,7 +157,7 @@ nav > ul > li > a {
   color: black;
   padding: 0 30px;
   overflow: hidden;
-  user-select: none;
+  /* user-select: none; */
   transition: var(--main-transition);
 }
 @media (max-width: 767px) {
