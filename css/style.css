@@ -464,9 +464,6 @@ main #mega-menu {
   overflow: hidden;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
-/* display: flex;
-justify-content: center;
-align-items: center; */
 #login #tabs {
   padding: 0;
   margin: 0;
@@ -489,6 +486,11 @@ align-items: center; */
 #login #content section {
   /* display: none; */
   margin: 0;
+}
+#login form input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 30px;
 }
 /* Animation */
 @keyframes leftToRight {
