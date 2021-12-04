@@ -493,6 +493,7 @@ main #mega-menu {
   display: flex;
   justify-content: start;
   align-items: center;
+  border-radius: 10px;
   flex-wrap: wrap;
   gap: 0px 200px;
   padding: 20px;
