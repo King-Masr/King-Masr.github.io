@@ -395,15 +395,15 @@ main #mega-menu {
 #followMe main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 80px;
 }
 #followMe #box {
   padding: 10px;
+  width: max-content;
   background-color: white;
   box-shadow: 0 12px 20px #00000025, 0 2px 4px #00000020;
 }
 #followMe #box #image {
-  height: var(--icon-hight);
   position: relative;
   overflow: hidden;
 }
@@ -439,6 +439,9 @@ main #mega-menu {
 }
 #followMe #box #image:hover i {
   transform: rotate(5deg) scale(1.1);
+}
+#followMe #box #text {
+  padding: 20px;
 }
 #followMe #box #text a {
   color: black;
