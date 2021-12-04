@@ -491,7 +491,7 @@ main #mega-menu {
   background-color: #5fe3ed45;
 }
 #login #content section:last-child {
-  margin: 5px;
+  margin: 10px 0;
 }
 #login form {
   display: flex;
