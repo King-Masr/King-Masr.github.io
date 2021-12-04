@@ -422,12 +422,13 @@ main #mega-menu {
 }
 #followMe #box #image a {
   color: var(--main-color-alt);
-}
-#followMe #box #text a {
-  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #followMe #box i {
-  font-size: 1700%;
+  font-size: 1500%;
   user-select: none;
   transition: var(--main-transition);
 }
@@ -436,6 +437,12 @@ main #mega-menu {
 }
 #followMe #box #image:hover i {
   transform: rotate(5deg) scale(1.1);
+}
+#followMe #box #text a {
+  color: black;
+}
+#followMe #box #text a:hover {
+  color: var(--main-color-alt);
 }
 /* Animation */
 @keyframes leftToRight {
