@@ -511,6 +511,8 @@ main #mega-menu {
 }
 #login #sociallogin .fb-login-button {
   border-radius: 10px;
+  margin: auto;
+  width: 50%;
 }
 /* Animation */
 @keyframes leftToRight {
