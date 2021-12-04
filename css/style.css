@@ -489,10 +489,10 @@ main #mega-menu {
 }
 #login form {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0px 400px;
+  gap: 0px 200px;
   padding: 20px;
 }
 #login form input:not(:last-child) {
@@ -501,7 +501,9 @@ main #mega-menu {
   border-radius: 30px;
 }
 #login form input:last-child {
+  width: 30%;
   padding: 7px;
+  margin: 0 35%;
   border-radius: 20px;
   color: var(--main-color);
 }
