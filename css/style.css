@@ -8,6 +8,7 @@
   --main-padding-bottom: 100px;
   --transition-delay: 1s;
   --animation-time: 0.7s;
+  --icon-hight: 10%;
 }
 /* Global Rules */
 * {
@@ -402,6 +403,7 @@ main #mega-menu {
   box-shadow: 0 12px 20px #00000025, 0 2px 4px #00000020;
 }
 #followMe #box #image {
+  height: var(--icon-hight);
   position: relative;
   overflow: hidden;
 }
@@ -423,12 +425,12 @@ main #mega-menu {
 #followMe #box #image a {
   color: var(--main-color-alt);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 #followMe #box i {
-  font-size: 1100%;
+  font-size: 1200%;
   user-select: none;
   transition: var(--main-transition);
 }
