@@ -512,6 +512,7 @@ main #mega-menu {
 }
 #login #sociallogin .fb-login-button {
   border-radius: 10px;
+  display: block;
   margin: auto;
   width: 50%;
 }
