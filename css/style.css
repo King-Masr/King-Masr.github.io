@@ -458,6 +458,7 @@ main #mega-menu {
   background-color: white;
 }
 #login main {
+  width: 60%;
   box-shadow: 0 2px 15px #00000025;
   background-color: #D8D8D8;
   border-radius: 6px;
