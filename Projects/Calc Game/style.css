@@ -18,6 +18,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  background-color: #eeededec;
 }
 main {
   padding-left: 15px;
@@ -54,13 +55,9 @@ header {
 }
 header main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 100px;
   position: relative;
 }
-/* @media (max-width: 767px) {
-  header main {
-    display: block;
-  }
-} */
