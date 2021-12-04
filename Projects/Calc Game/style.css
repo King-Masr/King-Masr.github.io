@@ -62,6 +62,5 @@ header main {
   position: relative;
 }
 section#landing {
-  display: table;
   background-color: white;
 }
