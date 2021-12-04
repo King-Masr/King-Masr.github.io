@@ -61,3 +61,7 @@ header main {
   gap: 100px;
   position: relative;
 }
+section#landing {
+  display: table;
+  background-color: white;
+}
