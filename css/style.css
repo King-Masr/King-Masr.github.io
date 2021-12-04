@@ -474,6 +474,15 @@ main #mega-menu {
   justify-content: center;
   align-items: center;
 }
+#login #tabs li {
+  padding: 10px;
+  background-color: #F4F4F4;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+#login #tabs li:first-child {
+  border-right: 5px solid white;
+}
 /* Animation */
 @keyframes leftToRight {
   50% {
