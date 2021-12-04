@@ -43,3 +43,24 @@ main {
     width: 1170px;
   }
 }
+header {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+  user-select: none;
+  cursor: default;
+}
+header main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media (max-width: 767px) {
+  header main {
+    display: block;
+  }
+}
