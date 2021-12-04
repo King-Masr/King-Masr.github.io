@@ -450,6 +450,13 @@ main #mega-menu {
   color: var(--main-color);
   font-weight: bold;
 }
+/* Log In section */
+#login {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background-color: var(--section-background);
+}
 /* Animation */
 @keyframes leftToRight {
   50% {
