@@ -490,6 +490,9 @@ main #mega-menu {
   border-radius: 10px;
   background-color: #5fe3ed45;
 }
+#login #content section:last-child {
+  margin: 5px;
+}
 #login form {
   display: flex;
   justify-content: start;
