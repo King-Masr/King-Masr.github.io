@@ -487,6 +487,11 @@ main #mega-menu {
   /* display: none; */
   margin: 0;
 }
+#login form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 #login form input {
   margin: 10px;
   padding: 5px;
