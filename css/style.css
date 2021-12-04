@@ -488,18 +488,22 @@ main #mega-menu {
   margin: 0;
 }
 #login form {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0px 600px;
+  margin: 20px;
 }
 #login form input:not(:last-child) {
-  margin: 15px 20px;
+  margin: 15px;
   padding: 10px 20px;
   border-radius: 30px;
 }
 #login form input:last-child {
   padding: 7px;
   border-radius: 20px;
+  color: var(--main-color);
 }
 /* Animation */
 @keyframes leftToRight {
