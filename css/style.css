@@ -462,7 +462,7 @@ main #mega-menu {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 15px #00000025;
-  background-color: #d8d8d8;
+  background-color: #D8D8D8;
   border-radius: 6px;
   overflow: hidden;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
@@ -481,7 +481,14 @@ main #mega-menu {
   transition: var(--main-transition);
 }
 #login #tabs li:first-child {
-  border-right: 5px solid white;
+  border-right: 5px solid #D8D8D8;
+}
+#login #content {
+  padding: 0;
+}
+#login #content section {
+  /* display: none; */
+  margin: 0;
 }
 /* Animation */
 @keyframes leftToRight {
