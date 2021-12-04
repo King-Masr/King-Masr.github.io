@@ -498,7 +498,7 @@ main #mega-menu {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0px 200px;
+  gap: 0px 300px;
   padding: 20px;
 }
 #login form input:not(:last-child) {
