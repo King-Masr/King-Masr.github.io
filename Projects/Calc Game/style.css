@@ -59,8 +59,8 @@ header main {
   flex-wrap: wrap;
   position: relative;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   header main {
     display: block;
   }
-}
+} */
