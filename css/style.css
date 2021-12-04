@@ -461,6 +461,18 @@ main #mega-menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 15px #00000025;
+  background-color: #d8d8d8;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+#login #tabs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Animation */
 @keyframes leftToRight {
