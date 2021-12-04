@@ -434,10 +434,8 @@ main #mega-menu {
   user-select: none;
   transition: var(--main-transition);
 }
-#followMe #box i:hover {
-  color: #1877f2;
-}
 #followMe #box #image:hover i {
+  color: #1877f2;
   transform: rotate(5deg) scale(1.1);
 }
 #followMe #box #text {
@@ -450,9 +448,6 @@ main #mega-menu {
 #followMe #box #text a {
   color: var(--main-color);
   font-weight: bold;
-}
-#followMe #box #text a:hover {
-  /* color: var(--main-color); */
 }
 /* Animation */
 @keyframes leftToRight {
