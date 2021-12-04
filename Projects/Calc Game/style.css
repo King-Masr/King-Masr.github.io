@@ -2,7 +2,7 @@
 :root {
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
-  --section-background: #ECECEC;
+  --section-background: #ececec;
   --main-transition: 0.5s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -62,5 +62,8 @@ header main {
   position: relative;
 }
 section#landing {
-  background-color: white;
+  background-color: #e9dbdbcc;
+  margin: 70px auto;
+  width: fit-content;
+  padding: 20px;
 }
