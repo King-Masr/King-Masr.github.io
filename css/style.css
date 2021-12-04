@@ -455,7 +455,12 @@ main #mega-menu {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
   position: relative;
-  background-color: var(--section-background);
+  background-color: white;
+}
+#login main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Animation */
 @keyframes leftToRight {
