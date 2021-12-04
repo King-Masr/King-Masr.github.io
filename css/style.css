@@ -497,6 +497,10 @@ main #mega-menu {
   padding: 10px 20px;
   border-radius: 30px;
 }
+#login form input:last-child {
+  padding: 7px;
+  border-radius: 20px;
+}
 /* Animation */
 @keyframes leftToRight {
   50% {
