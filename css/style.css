@@ -484,16 +484,16 @@ main #mega-menu {
 #login #tabs #active {
   background-color: #5fe3ed45;
 }
-#login #content section {
+#login #content section:not(:last-child) {
   /* display: none; */
   margin: 0;
+  border-radius: 10px;
   background-color: #5fe3ed45;
 }
 #login form {
   display: flex;
   justify-content: start;
   align-items: center;
-  border-radius: 10px;
   flex-wrap: wrap;
   gap: 0px 200px;
   padding: 20px;
