@@ -428,7 +428,7 @@ main #mega-menu {
   flex-wrap: wrap;
 }
 #followMe #box i {
-  font-size: 1500%;
+  font-size: 1100%;
   user-select: none;
   transition: var(--main-transition);
 }
