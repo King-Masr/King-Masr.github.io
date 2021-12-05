@@ -251,6 +251,10 @@
           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v12.0&appId=4641085819260522&autoLogAppEvents=1" nonce="0m5xe0yR"></script>
           <section id="sociallogin">
             <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+            <fb:login-button 
+            scope="public_profile,email"
+            onlogin="checkLoginState();">
+            </fb:login-button>
           </section>
         </section>
       </main>
@@ -262,7 +266,7 @@
           appId      : '4641085819260522',
           cookie     : true,
           xfbml      : true,
-          version    : '1.0'
+          version    : 'v12.0'
         });
         FB.AppEvents.logPageView();   
       };
@@ -276,6 +280,7 @@
       function checkLoginState() {
         FB.getLoginStatus(function(response) {
           statusChangeCallback(response);
+          console.log(response);
         });
       }
     </script>
