@@ -251,22 +251,41 @@
           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v12.0&appId=4641085819260522&autoLogAppEvents=1" nonce="0m5xe0yR"></script>
           <section id="sociallogin">
             <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
-            <fb:login-button 
-            scope="public_profile,email"
-            onlogin="checkLoginState();">
-            </fb:login-button>
           </section>
         </section>
       </main>
     </section>
     <footer></footer>
-    <script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBUA988gaa78nHtljW2Ht2v-QQWlcTrdKk",
+        authDomain: "king-masr.firebaseapp.com",
+        projectId: "king-masr",
+        storageBucket: "king-masr.appspot.com",
+        messagingSenderId: "198779631066",
+        appId: "1:198779631066:web:3ae309a5ba18b65ff8fce3",
+        measurementId: "G-5041KQ05RX"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <!-- <script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '4641085819260522',
           cookie     : true,
           xfbml      : true,
-          version    : 'v12.0'
+          version    : 'v1.0'
         });
         FB.AppEvents.logPageView();   
       };
@@ -277,13 +296,17 @@
         js.src = "https://connect.facebook.net/ar_AR/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-      function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-          console.log(response);
-        });
-      }
-    </script>
+      document.getElementById('loginBtn').addEventListener('click', () => {
+      //do the login
+      FB.login((response) => {
+        if (response.authResponse) {
+          //user just authorized your app
+          document.getElementById('loginBtn').style.display = 'none';
+          getUserData();
+        }
+      }, {scope: 'email,public_profile', return_scopes: true});
+}, false);
+    </script> -->
     <div id="fb-root"></div>
     <div id="fb-customer-chat" class="fb-customerchat"></div>
     <script>
