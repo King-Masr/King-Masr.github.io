@@ -260,6 +260,9 @@
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+      // Add Firebase products that you want to use
+      import { auth } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
+      import { firestore } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
     
@@ -278,6 +281,7 @@
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
+      console.log(app);
     </script>
     <script src='https://www.google.com/recaptcha/api.js?render=6Ldw2nAdAAAAABWKlnUxGkeDwysiQXqNDQytjk5q'></script>
     <!-- <script>
