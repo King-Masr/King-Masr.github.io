@@ -97,7 +97,6 @@ section.Counts input:not(:checked):hover + label::after {
   max-width: 45%;
   margin: 10px auto;
   margin-left: 35%;
-  position: relative;
   transition: var(--main-transition);
 }
 .Generater input {
@@ -108,7 +107,7 @@ section.Counts input:not(:checked):hover + label::after {
   padding: 10px 15px;
   cursor: pointer;
   user-select: none;
-  /* position: relative; */
+  position: relative;
 }
 .Generater label::before {
   content: "";
@@ -116,7 +115,7 @@ section.Counts input:not(:checked):hover + label::after {
   height: 18px;
   border: var(--main-input-border);
   position: absolute;
-  left: 0;
+  left: -15px;
   top: 50%;
   transform: translateY(-50%);
   background: white;
@@ -128,8 +127,8 @@ section.Counts input:not(:checked):hover + label::after {
   width: 12px;
   height: 12px;
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: -10px;
+  top: 19px;
   transition: var(--main-transition);
 }
 .Generater input:not(:checked):hover + label::after {
