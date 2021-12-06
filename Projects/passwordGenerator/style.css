@@ -62,7 +62,7 @@ section.Counts div {
   display: inline-block;
   width: 15%;
   margin: 1.7%;
-  padding: 0.2%;
+  padding: 0.1%;
 }
 section.Counts input {
   -webkit-appearance: none;
@@ -132,7 +132,7 @@ section.Counts input:not(:checked):hover + label::after {
   height: 12px;
   position: absolute;
   left: -10px;
-  top: 19px;
+  top: 20px;
   transition: var(--main-transition);
 }
 .Generater input:not(:checked):hover + label::after {
