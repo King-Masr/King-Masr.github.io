@@ -70,6 +70,8 @@ section.Counts input {
 }
 section.Counts label {
   padding: 10px 7px;
+  cursor: pointer;
+  user-select: none;
   position: relative;
 }
 section.Counts input:checked + label::after,
@@ -104,6 +106,8 @@ section.Counts input:not(:checked):hover + label::after {
   appearance: none;
 }
 .Generater label {
+  display: inline-block;
+  height: 32px;
   padding: 10px 15px;
   cursor: pointer;
   user-select: none;
