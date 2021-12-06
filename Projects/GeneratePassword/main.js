@@ -15,7 +15,7 @@ let checkBoxNumber = document.querySelector("#N");
 let checkBoxCode = document.querySelector("#C");
 let checkBoxSerial = document.querySelector("#S");
 window.onload = function () {
-  CountID("C12");
+  document.getElementById("C12").click();
   checkBoxSerial.onclick = function () {
     if (checkBoxCapital.checked === false) {
       if (checkBoxSerial.checked === true) {
@@ -34,44 +34,27 @@ window.onload = function () {
     }
   };
   copyBtn.onclick = function () {
-    copy(serialElement.innerText);
+    copyToClipboard(serialElement.textContent);
   }
 };
-let Count = 0;
-let BTNA;
-function DelCount(ID) {
-  let Btns = ["C8", "C10", "C12", "C15", "C20"];
-  for (let i = 0; i < Btns.length; i++) {
-    if (Btns[i] == ID) {
-      continue;
-    }
-    let BTN = document.getElementById(Btns[i]);
-    BTN.style.border = "0px solid black";
-    BTN.style.backgroundColor = "#fff";
-  }
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
+  copyBtn.textContent = "Copied!";
+  setTimeout(function () {
+    copyBtn.textContent = "Click To Copy!";
+  }, 1000)
 }
+let Count = 0;
 function CountID(ID) {
-  let BTN = document.getElementById(ID);
-  if (BTNA == ID) {
-    BTN.style.border = "0px solid black";
-    BTN.style.backgroundColor = "#fff";
-    BTNA = null;
-    Count = 0;
+  if (ID.length == 2) {
+    Count = ID[1];
   } else {
-    BTNA = ID;
-    DelCount(ID);
-    if (ID.length == 2) {
-      Count = ID[1];
-    } else {
-      Count = `${ID[1]}${ID[2]}`;
-    }
-    BTN.style.border = "3px solid black";
-    BTN.style.backgroundColor = "white";
+    Count = `${ID[1]}${ID[2]}`;
   }
 }
 function GeneratePass() {
   if (Count === 0) {
-    serialElement.innerHTML = "Choose Number First";
+    serialElement.textContent = "Choose Number First";
     return false;
   }
   if (
@@ -80,7 +63,7 @@ function GeneratePass() {
     checkBoxNumber.checked === false &&
     checkBoxCode.checked === false
   ) {
-    serialElement.innerHTML = "Choose Kind Of Characters First";
+    serialElement.textContent = "Choose Kind Of Characters First";
     return false;
   }
   let Characters = "";
@@ -101,7 +84,7 @@ function GeneratePass() {
     for (let i = 0; i < Count; i++) {
       Serial += Characters[Math.floor(Math.random() * Characters.length)];
       if (i == Count - 1) {
-        serialElement.innerHTML = Serial;
+        serialElement.textContent = Serial;
         copyBtn.style.display = "block";
         break;
       }
@@ -113,7 +96,7 @@ function GeneratePass() {
       }
       Serial += Characters[Math.floor(Math.random() * Characters.length)];
       if (i == Count - 1) {
-        serialElement.innerHTML = Serial;
+        serialElement.textContent = Serial;
         copyBtn.style.display = "block";
         break;
       }
