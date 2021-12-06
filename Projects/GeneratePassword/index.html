@@ -11,13 +11,26 @@
       <div class="Copy">Click To Copy!</div>
     </section>
     <section class="Counts">
-      <form>
-        <input type="radio" class="Count" onclick="CountID('C8')" id="C8">8</input>
-        <input type="radio" class="Count" onclick="CountID('C10')" id="C10">10</input>
-        <input type="radio" class="Count" onclick="CountID('C12')" id="C12">12</input>
-        <input type="radio" class="Count" onclick="CountID('C15')" id="C15">15</input>
-        <input type="radio" class="Count" onclick="CountID('C20')" id="C20">20</input>
-      </form>
+      <div>
+        <input type="radio" name="NA" class="Count" onclick="CountID('C8')" id="C8">
+        <label for="C8">&nbsp;8</label>
+      </div>
+      <div>
+        <input type="radio" name="NA" class="Count" onclick="CountID('C10')" id="C10">
+        <label for="C10">10</label>
+      </div>
+      <div>
+        <input type="radio" name="NA" class="Count" onclick="CountID('C12')" id="C12">
+        <label for="C12">12</label>
+      </div>
+      <div>
+        <input type="radio" name="NA" class="Count" onclick="CountID('C15')" id="C15">
+        <label for="C15">15</label>
+      </div>
+      <div>
+        <input type="radio" name="NA" class="Count" onclick="CountID('C20')" id="C20">
+        <label for="C20">20</label>
+      </div>
     </section>
     <section class="Generater">
       <div>
@@ -40,32 +53,9 @@
         <input type="checkbox" id="S">
         <label for="S">Serial Number</label>
       </div>
-      <hr>
+      <hr />
       <span class="Generate" onclick="GeneratePass()">Generate</span>
     </section>
-    <!-- Messenger المكون الإضافي "دردشة" Code -->
-    <div id="fb-root"></div>
-    <!-- Your المكون الإضافي "دردشة" code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "103839318756415");
-      chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
     <script src="main.js"></script>
   </body>
 </html>
