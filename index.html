@@ -278,9 +278,10 @@
         appId: "1:198779631066:web:3ae309a5ba18b65ff8fce3",
         measurementId: "G-5041KQ05RX"
       };
-    
+      
       // Initialize Firebase
       let app = initializeApp(firebaseConfig);
+      getApp(app);
       let analytics = getAnalytics(app);
       // Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
       // key is the counterpart to the secret key you set in the Firebase console.
