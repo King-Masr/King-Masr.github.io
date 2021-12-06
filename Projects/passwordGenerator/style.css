@@ -5,7 +5,7 @@
   --main-border: 2px solid black;
   --main-input-border: 0.5mm solid gray;
   --alt-input-border: 3px solid blue;
-  --main-border-radius: 10px;
+  --main-border-radius: 35px;
   --alt-border-radius: 5px;
 }
 body {
@@ -25,7 +25,7 @@ section.Password {
   margin: 20px auto;
   position: relative;
 }
-.Serial {
+section.Password .Serial {
   width: 80%;
   padding: 20px;
   background-color: #eee;
@@ -36,7 +36,7 @@ section.Password {
   font-weight: bold;
   height: 50px;
 }
-.Copy {
+section.Password .Copy {
   display: none;
   width: 30%;
   height: 20%;
@@ -86,7 +86,7 @@ section.Counts input:not(:checked):hover + label::after {
   border: var(--alt-input-border);
   position: absolute;
   top: 9%;
-  left: 9%;
+  left: 6%;
   border-radius: var(--alt-border-radius);
   transition: var(--main-transition);
 }
@@ -140,7 +140,7 @@ section.Generater label {
   position: absolute;
   left: -10px;
   top: 20px;
-  border-radius: var(--alt-border-radius);
+  border-radius: calc(var(--alt-border-radius) - 2px);
   transition: var(--main-transition);
 }
 .Generater input:not(:checked):hover + label::after {
