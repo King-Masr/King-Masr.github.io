@@ -227,9 +227,9 @@
               <input type="email" name="email" id="email">
               <br>
               <label for="password">Enter your Password: </label>
-              <input type="text" name="password" id="password">
+              <input type="password" name="password" id="password">
               <br>
-              <label for="confirm">ReEnter your Password</label>
+              <label for="confirm">reEnter your Password</label>
               <input type="password" id="confirm">
               <br>
               <input type="submit" value="Sign Up" id="signup">
@@ -239,18 +239,19 @@
           <section id="signin">
             <form action="" method="get">
               <label for="email">Enter your Email: </label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="emaili">
               <br>
               <label for="password">Enter your Password: </label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="passwordi">
               <br>
               <input type="submit" value="Sign In" id="signin">
             </form>
           </section>
-          <div id="fb-root"></div>
+          <!-- <div id="fb-root"></div>
           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v12.0&appId=4641085819260522&autoLogAppEvents=1" nonce="0m5xe0yR"></script>
           <section id="sociallogin">
             <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+          -->
           </section>
         </section>
       </main>
@@ -281,7 +282,7 @@
       // Initialize Firebase
       let app = initializeApp(firebaseConfig);
       let analytics = getAnalytics(app);
-      import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
       // let auth = getAuth();
     </script>
     <script src='https://www.google.com/recaptcha/api.js?render=6Ldw2nAdAAAAABWKlnUxGkeDwysiQXqNDQytjk5q'></script>
