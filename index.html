@@ -214,8 +214,8 @@
       <h2 id="mainTitle">Log In</h2>
       <main>
         <ul id="tabs">
-          <li id="active" data-id="signup">Sign Up</li>
-          <li data-id="signin">Sign In</li>
+          <li id="active" data-id="#signup">Sign Up</li>
+          <li data-id="#signin">Sign In</li>
         </ul>
         <section id="content">
           <section id="Signup">
@@ -264,7 +264,8 @@
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-    
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
+      let auth = getAuth();
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       let firebaseConfig = {
