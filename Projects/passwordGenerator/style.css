@@ -88,24 +88,24 @@ section.Counts input:not(:checked):hover + label::after {
 section.Counts input:not(:checked):hover + label::after {
   opacity: 0.3;
 }
-.Generater {
+section.Generater {
   width: 45%;
   margin: 10px auto;
   padding: 20px;
   background-color: #f9f9f9;
 }
-.Generater div {
+section.Generater div {
   min-width: 30%;
   max-width: 45%;
   margin: 10px auto;
   margin-left: 35%;
   transition: var(--main-transition);
 }
-.Generater input {
+section.Generater input {
   -webkit-appearance: none;
   appearance: none;
 }
-.Generater label {
+section.Generater label {
   display: inline-block;
   height: 32px;
   padding: 10px 15px;
