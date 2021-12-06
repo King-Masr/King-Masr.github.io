@@ -3,6 +3,7 @@
   --main-color: #4db0ff;
   --main-color-alt: #3585c7;
   --section-background: #ececec;
+  --section-alt-background: #fbfbfb;
   --main-transition: 0.5s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -20,6 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: var(--section-alt-background);
   font-family: "Work Sans", sans-serif;
 }
 a {
@@ -384,7 +386,7 @@ main #mega-menu {
   color: var(--main-color);
 }
 #projects #box:hover #info i {
-  animation: arrowMove var(--animation-time) linear infinite;
+  animation: arrowMove calc(var(--animation-time) + 0.8s) linear infinite;
 }
 /* Follow Me section */
 #followMe {
@@ -456,7 +458,7 @@ main #mega-menu {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
   position: relative;
-  background-color: white;
+  background-color: var(--section-alt-background);
 }
 #login main {
   width: 35%;
@@ -481,17 +483,19 @@ main #mega-menu {
   border-radius: 5px;
   transition: var(--main-transition);
 }
-#login #tabs #active {
+#login #tabs .active {
   background-color: #5fe3ed45;
+  transition: var(--main-transition);
 }
 #login #content section:not(:last-child) {
-  /* display: none; */
-  margin: 0;
+  margin-bottom: 10px;
   border-radius: 10px;
   background-color: #5fe3ed45;
+  transition: 10s;
 }
-#login #content section:last-child {
-  margin: 10px 0;
+#login #content section:not(:first-child, :last-child) {
+  display: none;
+  transition: 10s;
 }
 #login form {
   display: flex;
