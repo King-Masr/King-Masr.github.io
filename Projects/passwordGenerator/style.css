@@ -10,6 +10,12 @@ body {
   background-color: #ff5722;
   font-size: 1.7em;
 }
+.fa-arrow-circle-right {
+  color: black;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+}
 /* Password section */
 section.Password {
   width: 55%;
