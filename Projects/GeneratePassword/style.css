@@ -1,9 +1,17 @@
+/* Global Variables */
+:root {
+  --main-transition: 0.5s;
+  --alt-transition: 0.2s;
+  --main-input-border: 0.5mm solid gray;
+  --alt-input-border: 3px solid blue;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ff5722;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
-.Password {
+/* Password section */
+section.Password {
   width: 55%;
   margin: 20px auto;
   position: relative;
@@ -31,34 +39,46 @@ body {
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
-  transition: 0.7s;
   position: absolute;
   top: 85%;
   left: 35%;
+  transition: var(--main-transition);
 }
-.Counts {
+/* Counts section */
+section.Counts {
   min-width: 30%;
-  max-width: 45%;
+  max-width: calc(45% + 20px);
   margin: 10px auto;
-  padding: 15px;
+  padding: 10px;
   background-color: thistle;
 }
-.Counts div {
-  min-height: 60px;
-  width: 95%;
-  margin: auto;
-  padding: 5px;
+section.Counts div {
+  display: inline-block;
+  width: 15%;
+  margin: 1.7%;
+  padding: 0.2%;
 }
-.Count {
-  text-align: center;
-  font: 2em sans-serif;
-  background-color: #fff;
-  margin: 0 3%;
-  padding: 5px 5px;
-  cursor: pointer;
-  transition: 0.2s;
-  transition-timing-function: linear;
-  user-select: none;
+section.Counts input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+section.Counts label {
+  padding: 10px 7px;
+  position: relative;
+}
+section.Counts input:checked + label::after,
+section.Counts input:not(:checked):hover + label::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: var(--alt-input-border);
+  position: absolute;
+  top: 9%;
+  left: 9%;
+  transition: var(--main-transition);
+}
+section.Counts input:not(:checked):hover + label::after {
+  opacity: 0.3;
 }
 .Generater {
   width: 45%;
@@ -71,10 +91,10 @@ body {
   max-width: 45%;
   margin: 10px auto;
   margin-left: 35%;
-  transition: 0.5s;
   position: relative;
+  transition: var(--main-transition);
 }
-.Generater input[type="checkbox"] {
+.Generater input {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -82,33 +102,34 @@ body {
   padding: 10px 15px;
   cursor: pointer;
   user-select: none;
+  /* position: relative; */
 }
 .Generater label::before {
   content: "";
   width: 18px;
   height: 18px;
-  border: 0.5mm solid gray;
+  border: var(--main-input-border);
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   background: white;
 }
-.Generater input[type="checkbox"]:checked + label::after,
-.Generater input[type="checkbox"]:not(:checked):hover + label::after {
+.Generater input:checked + label::after,
+.Generater input:not(:checked):hover + label::after {
   content: "";
-  transition: 0.4s;
   background-color: blue;
   width: 12px;
   height: 12px;
   position: absolute;
   left: 5px;
-  top: 8px;
+  top: 10px;
+  transition: var(--main-transition);
 }
-.Generater input[type="checkbox"]:not(:checked):hover + label::after {
+.Generater input:not(:checked):hover + label::after {
   opacity: 0.2;
 }
-.Generater input[type="checkbox"]:checked + label {
+.Generater input:checked + label {
   color: blue;
 }
 .Generate {
@@ -121,8 +142,8 @@ body {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.2s;
   user-select: none;
+  transition: var(--alt-transition);
 }
 .Generate:hover {
   background-color: #f0440e;
