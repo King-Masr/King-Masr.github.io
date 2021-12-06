@@ -8,11 +8,12 @@
 //   });
 // });
 window.onload = function () {
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
+  let auth = getAuth();
   document.getElementById("signup").addEventListener("click", function (e) {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
-    let auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
@@ -26,4 +27,3 @@ window.onload = function () {
       });
   });
 };
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
