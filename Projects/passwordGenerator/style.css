@@ -2,8 +2,11 @@
 :root {
   --main-transition: 0.5s;
   --alt-transition: 0.2s;
+  --main-border: 2px solid black;
   --main-input-border: 0.5mm solid gray;
   --alt-input-border: 3px solid blue;
+  --main-border-radius: 10px;
+  --alt-border-radius: 5px;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +30,7 @@ section.Password {
   padding: 20px;
   background-color: #eee;
   margin: 40px auto;
-  border-radius: 4px;
+  border-radius: var(--main-border-radius);
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -41,8 +44,8 @@ section.Password {
   text-align: center;
   font-size: 0.7em;
   background-color: #d8daff;
-  border: 0.01px solid black;
-  border-radius: 10px;
+  border: 0.1px solid black;
+  border-radius: var(--main-border-radius);
   cursor: pointer;
   user-select: none;
   position: absolute;
@@ -57,6 +60,7 @@ section.Counts {
   margin: 10px auto;
   padding: 10px;
   background-color: thistle;
+  border-radius: var(--main-border-radius);
 }
 section.Counts div {
   display: inline-block;
@@ -83,6 +87,7 @@ section.Counts input:not(:checked):hover + label::after {
   position: absolute;
   top: 9%;
   left: 9%;
+  border-radius: var(--alt-border-radius);
   transition: var(--main-transition);
 }
 section.Counts input:not(:checked):hover + label::after {
@@ -93,11 +98,12 @@ section.Generater {
   margin: 10px auto;
   padding: 20px;
   background-color: #f9f9f9;
+  border-radius: var(--main-border-radius);
 }
 section.Generater div {
   min-width: 30%;
   max-width: 45%;
-  margin: 10px auto;
+  margin: -5px auto;
   margin-left: 35%;
   transition: var(--main-transition);
 }
@@ -123,6 +129,7 @@ section.Generater label {
   top: 50%;
   transform: translateY(-50%);
   background: white;
+  border-radius: var(--alt-border-radius);
 }
 .Generater input:checked + label::after,
 .Generater input:not(:checked):hover + label::after {
@@ -133,6 +140,7 @@ section.Generater label {
   position: absolute;
   left: -10px;
   top: 20px;
+  border-radius: var(--alt-border-radius);
   transition: var(--main-transition);
 }
 .Generater input:not(:checked):hover + label::after {
@@ -148,7 +156,7 @@ section.Generater label {
   background-color: #ff5722;
   color: white;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: var(--alt-border-radius);
   font-weight: bold;
   cursor: pointer;
   user-select: none;
