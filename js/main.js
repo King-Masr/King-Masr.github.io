@@ -1,3 +1,14 @@
+window.onload = function () {
+  new TypeIt(".typed", {
+    strings: ["I am a Web Developer Front End"],
+    speed: 250,
+    waitUntilVisible: false,
+    breakLines: false,
+    startDelay: 1000,
+    // nextStringDelay: 5000,
+    loop: true,
+  }).go();
+};
 let myTabs = document.querySelectorAll("#login #tabs li");
 let tabs = Array.from(myTabs);
 let mySections = document.querySelectorAll("#login #content section");
