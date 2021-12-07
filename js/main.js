@@ -1,5 +1,5 @@
 window.onload = function () {
-  new TypeIt(".typed", {
+  new TypeIt("#description", {
     strings: ["I am a Web Developer Front End"],
     speed: 250,
     waitUntilVisible: false,
