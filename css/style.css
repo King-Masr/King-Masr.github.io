@@ -357,6 +357,7 @@ main #mega-menu {
   box-shadow: 0 2px 15px #00000035;
 }
 #projects #box img {
+  height: 200px;
   width: 100%;
   max-width: 100%;
 }
