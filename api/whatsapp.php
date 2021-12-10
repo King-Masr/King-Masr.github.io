@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"]==="get") {
+if ($_SERVER["REQUEST_METHOD"] === "get") {
   $message = "
   الاسم: ".$_GET["name"]."
   البريدالإلكتروني: ".$_GET["email"]."
@@ -9,4 +9,6 @@ if ($_SERVER["REQUEST_METHOD"]==="get") {
   معلومات اضافية: ".$_GET["email-message"];
   $url = "https://api.whatsapp.com/send/?phone=201015791302&text=".$message;
   header("REFRESH:0;URL:".$url);
+} else {
+  echo "Hero";
 }
