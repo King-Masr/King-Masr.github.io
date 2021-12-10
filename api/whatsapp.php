@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "get") {
   العنوان: ".$_GET["location"]."
   معلومات اضافية: ".$_GET["email-message"];
   $url = "https://api.whatsapp.com/send/?phone=201015791302&text=".$message;
-  header("REFRESH:0;URL:".$url);
+  // header("REFRESH:0;URL:".$url);
 } else {
   echo "Hero";
 }
