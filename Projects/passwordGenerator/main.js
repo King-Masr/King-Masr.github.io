@@ -1,11 +1,15 @@
 /* 
-[1] Set Characters To Create The Serial
-[2] Set Serial Characters Count
-[3] Create Empty Variable To Store The Serial
-[4] Create Random Number + Access Sequence
-[5] Store The Random Element In The Empty Variable
-[6] Loop x Count
-[7] Change Serial Element Content With The Serial Variable
+*First Choose Count of Password*
+*Second Choose What Kind of Characters*
+*Third Click Generate To Create Password*
+*The Way To Generate Password*
+  [1] Set Characters To Create The Serial
+  [2] Set Serial Characters Count
+  [3] Create Empty Variable To Store The Serial
+  [4] Create Random Number + Access Sequence
+  [5] Store The Random Element In The Empty Variable
+  [6] Loop x Count
+  [7] Change Serial Element Content With The Serial Variable
 */
 let serialElement = document.querySelector(".Serial");
 let copyBtn = document.querySelector(".Copy");
