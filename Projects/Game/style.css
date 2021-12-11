@@ -1,0 +1,69 @@
+/* Global Variables */
+:root {
+  --main-color: #4db0ff;
+  --main-color-alt: #3585c7;
+  --section-background: #ececec;
+  --main-transition: 0.5s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --transition-delay: 1s;
+  --animation-time: 0.7s;
+  --icon-hight: 10%;
+}
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #eeededec;
+}
+main {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small Screen */
+@media (min-width: 768px) {
+  main {
+    width: 750px;
+  }
+}
+/* Medium Screen */
+@media (min-width: 992px) {
+  main {
+    width: 970px;
+  }
+}
+/* Large Screen */
+@media (min-width: 1200px) {
+  main {
+    width: 1170px;
+  }
+}
+header {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+  user-select: none;
+  cursor: default;
+}
+header main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  position: relative;
+}
+section#landing {
+  background-color: #acacc175;
+  margin: 60px auto;
+  width: fit-content;
+  padding: 20px;
+}
