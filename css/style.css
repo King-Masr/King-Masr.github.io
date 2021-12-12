@@ -277,11 +277,11 @@ main #mega-menu {
   align-items: center;
   padding-bottom: 120px;
 }
-#landing #text {
+#landing main #text {
   flex: 1;
 }
 @media (max-width: 991px) {
-  #landing #text {
+  #landing main #text {
     text-align: center;
   }
 }
@@ -312,15 +312,18 @@ main #mega-menu {
     margin: 10px auto;
   }
 }
+#landing main #image {
+  width: 600px;
+}
+@media (max-width: 991px) {
+  #landing main #image {
+    display: none;
+  }
+}
 #landing #image img {
   width: 600px;
   position: relative;
   animation: stairs 5s linear infinite;
-}
-@media (max-width: 991px) {
-  #landing #image {
-    display: none;
-  }
 }
 #landing a {
   color: var(--main-color);
