@@ -1,0 +1,159 @@
+<!-- <section id="login" style="display: none;">
+  <h2 id="mainTitle">Log In</h2>
+  <main>
+    <ul id="tabs">
+      <li class="active" data-id="#Signup">Sign Up</li>
+      <li data-id="#Signin">Sign In</li>
+    </ul>
+    <section id="content">
+      <section id="Signup">
+        <form action="" method="get">
+          <label for="name">Enter your Full Name: </label>
+          <input type="text" name="name" id="name">
+          <br>
+          <label for="email">Enter your Email: </label>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="password">Enter your Password: </label>
+          <input type="password" name="password" id="password">
+          <br>
+          <label for="confirm">reEnter your Password</label>
+          <input type="password" id="confirm">
+          <br>
+          <input type="submit" value="Sign Up" id="signup">
+        </form>
+      </section>
+      <section id="Signin">
+        <form action="" method="get">
+          <label for="email">Enter your Email: </label>
+          <input type="email" name="email" id="emaili">
+          <br>
+          <label for="password">Enter your Password: </label>
+          <input type="password" name="password" id="passwordi">
+          <br>
+          <input type="submit" value="Sign In" id="signin">
+        </form>
+      </section>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v12.0&appId=4641085819260522&autoLogAppEvents=1" nonce="0m5xe0yR"></script>
+      <section id="sociallogin">
+        <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+      </section>
+    </section>
+  </main>
+</section>
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '4641085819260522',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v1.0'
+        });
+        FB.AppEvents.logPageView();   
+      };
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/ar_AR/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      document.getElementById('loginBtn').addEventListener('click', () => {
+      //do the login
+      FB.login((response) => {
+        if (response.authResponse) {
+          //user just authorized your app
+          document.getElementById('loginBtn').style.display = 'none';
+          getUserData();
+        }
+      }, {scope: 'email,public_profile', return_scopes: true});
+}, false);
+    </script>
+let myTabs = document.querySelectorAll("#login #tabs li");
+let tabs = Array.from(myTabs);
+let mySections = document.querySelectorAll("#login #content section");
+let sections = Array.from(mySections);
+sections.pop();
+tabs.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    tabs.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+    sections.forEach((section) => {
+      section.style.display = "none";
+    });
+    document.querySelector(e.currentTarget.dataset.id).style.display = "block";
+  });
+});
+/* Log In section */
+#login {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background-color: var(--section-alt-background);
+}
+#login main {
+  width: 35%;
+  box-shadow: 0 2px 15px #00000025;
+  background-color: #d8d8d880;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+#login #tabs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+#login #tabs li {
+  padding: 10px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: var(--main-transition);
+}
+#login #tabs .active {
+  background-color: #5fe3ed45;
+  transition: var(--main-transition);
+}
+#login #content section:not(:last-child) {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #5fe3ed45;
+  transition: 10s;
+}
+#login #content section:not(:first-child, :last-child) {
+  display: none;
+  transition: 10s;
+}
+#login form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px 300px;
+  padding: 20px;
+}
+#login form input:not(:last-child) {
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#login form input:last-child {
+  width: 30%;
+  padding: 7px;
+  margin: 0 35%;
+  border-radius: 20px;
+  color: var(--main-color);
+}
+#login #sociallogin .fb-login-button {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
