@@ -44,6 +44,32 @@ main {
     width: 1170px;
   }
 }
+#alert {
+  width: 50%;
+  background-image: url(/imgs/congratulations.png);
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+#alert h2 {
+  width: fit-content;
+  font-size: 2em;
+  background-color: wheat;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+#alert main {
+  width: 80%;
+}
+#alert main i {
+  color: rgb(190, 121, 121);
+}
+#alert main p {
+  color: #777;
+  background-color: violet;
+}
+/* header */
 header {
   background-color: white;
   -webkit-box-shadow: 0 0 10px #ddd;
