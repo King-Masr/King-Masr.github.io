@@ -13,27 +13,210 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" href="meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-startup-image"
+      href="meta/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+    />
+    <!-- iPhone 5+ -->
+    <link
+      rel="apple-touch-startup-image"
+      href="meta/apple-touch-startup-image-640x920.png"
+      media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
+    />
+    <!-- iPhone, retina -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta
+      name="viewport"
+      content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
   </head>
   <body>
     <header>
       <main>
-        <h2 id="theFirst">The First: </h2>
-        <h3 id="theSecond">The Second: </h3>
-        <h4 id="theThird">The Third: </h4>
+        <h2 id="theFirst">The First:</h2>
+        <h3 id="theSecond">The Second:</h3>
+        <h4 id="theThird">The Third:</h4>
       </main>
     </header>
-    <section id="main">
-      <main>
-        <section id="Na">
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-        </section>
-        <section id="Nb"></section>
-      </main>
-    </section>
-    <script src="main.js"></script>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">2048</h1>
+        <div class="scores-container">
+          <div class="score-container">
+            880
+            <div class="score-addition">+16</div>
+          </div>
+          <div class="best-container">880</div>
+        </div>
+      </div>
+      <div class="above-game">
+        <p class="game-intro">
+          انضم إلى لعبتنا واجمع <strong> 2048 حجرا ..</strong>
+        </p>
+        <a class="restart-button">لعبة جديدة</a>
+      </div>
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+            <a class="retry-button" onclick="cl()">إلعب مجددا</a>
+          </div>
+        </div>
+        <div class="grid-container" onclick="">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+        <div class="tile-container">
+          <div class="tile tile-4 tile-position-2-1 tile-new">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-32 tile-position-2-3">
+            <div class="tile-inner">32</div>
+          </div>
+          <div class="tile tile-4 tile-position-3-2">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-8 tile-position-3-3">
+            <div class="tile-inner">8</div>
+          </div>
+          <div class="tile tile-2 tile-position-3-4">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-2 tile-position-3-4">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-4 tile-position-3-4 tile-merged">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-2 tile-position-4-1">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-128 tile-position-4-2">
+            <div class="tile-inner">128</div>
+          </div>
+          <div class="tile tile-4 tile-position-4-3">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-4 tile-position-4-3">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-8 tile-position-4-3 tile-merged">
+            <div class="tile-inner">8</div>
+          </div>
+          <div class="tile tile-2 tile-position-4-4">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-2 tile-position-4-4">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-4 tile-position-4-4 tile-merged">
+            <div class="tile-inner">4</div>
+          </div>
+        </div>
+      </div>
+      <div class="above-game">
+        <br />
+        <a
+          style="margin-right: 2px"
+          class="restart-button"
+          onclick="telegram()"
+          >قناتنا في التليجرام</a
+        >
+      </div>
+      <p class="game-explanation">
+        <strong class="important">طريقة اللعب :</strong> قم بتحريك
+        <strong>الأحجار</strong> يمنة أو يسرة للأعلى أو الأسفل ، عندما
+        يتلامس حجر يحملان نفس الرقم<strong> سيندمجان في حجر واحد!</strong>
+      </p>
+      <hr />
+      <p>
+        Created by
+        <a href="https://t.me/api_tele" target="_blank">Api Code</a>
+      </p>
+    </div>
+
+    <script>
+      function get(name) {
+        var url = window.location.search;
+        var num = url.search(name);
+        var namel = name.length;
+        var frontlength = namel + num + 1; //length of everything before the value
+        var front = url.substring(0, frontlength);
+        url = url.replace(front, "");
+        num = url.search("&");
+        if (num >= 0) return url.substr(0, num);
+        if (num < 0) return url;
+      }
+
+      function telegram() {
+        window.location = "https://t.me/api_tele";
+      }
+      function cl() {
+        var priceEls = document.getElementsByClassName("best-container");
+        for (var i = 0; i < priceEls.length; i++) {
+          var price = priceEls[i].innerText;
+        }
+
+        var id = "&id=" + get("id");
+        var chat = "&chat=" + get("chat");
+        var mid = "&mid=" + get("mid");
+        var name = "&name=" + get("name");
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open(
+          "POST",
+          "https://api-islamic.cf/game/Numbers/api.php",
+          true
+        );
+        httpRequest.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+        httpRequest.send("q=" + price + id + chat + mid);
+
+        document.getElementById("imgb").style.display = "none";
+      }
+
+      function aa() {
+        alert("تم بنجاح");
+      }
+    </script>
+    <script src="js/bind_polyfill.js"></script>
+    <script src="js/classlist_polyfill.js"></script>
+    <script src="js/animframe_polyfill.js"></script>
+    <script src="js/keyboard_input_manager.js"></script>
+    <script src="js/html_actuator.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/local_storage_manager.js"></script>
+    <script src="js/game_manager.js"></script>
+    <script src="js/application.js"></script>
   </body>
 </html>
