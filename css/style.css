@@ -496,7 +496,7 @@ main #mega-menu {
   50% {
     top: -50px;
     width: 300px;
-    transform: rotate(5turn);
+    transform: rotate(0.5turn);
   }
 }
 @keyframes bouncing {
