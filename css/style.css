@@ -326,7 +326,7 @@ main #mega-menu {
 #landing #image img {
   width: 400px;
   position: relative;
-  animation: myImage 3s linear infinite;
+  animation: myImage 10s linear infinite;
 }
 #landing a {
   color: var(--main-color);
