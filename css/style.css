@@ -326,7 +326,7 @@ main #mega-menu {
 #landing #image img {
   width: 400px;
   position: relative;
-  animation: myImage 10s linear infinite;
+  animation: showfast 1.5s ease;
 }
 #landing a {
   color: var(--main-color);
@@ -487,16 +487,19 @@ main #mega-menu {
     height: 100%;
   }
 }
-@keyframes myImage {
-  0%,
-  100% {
+@keyframes showfast {
+  0% {
+    height: 0px;
+    width: 0px;
     top: 0;
-    width: 400px;
   }
   50% {
-    top: -50px;
-    width: 300px;
-    transform: rotate(0.5turn);
+    top: -100px;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    top: 0;
   }
 }
 @keyframes bouncing {
