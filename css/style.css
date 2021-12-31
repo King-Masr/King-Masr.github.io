@@ -326,7 +326,7 @@ main #mega-menu {
 #landing #image img {
   width: 400px;
   position: relative;
-  animation: stairs var(--animation-alt-time) linear infinite;
+  animation: myImage var(--animation-alt-time) linear infinite;
 }
 #landing a {
   color: var(--main-color);
@@ -487,13 +487,16 @@ main #mega-menu {
     height: 100%;
   }
 }
-@keyframes stairs {
+@keyframes myImage {
   0%,
   100% {
     top: 0;
+    width: 400px;
   }
   50% {
     top: -50px;
+    width: 300px;
+    transform: rotate(20turn);
   }
 }
 @keyframes bouncing {
