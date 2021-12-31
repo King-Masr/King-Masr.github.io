@@ -326,7 +326,7 @@ main #mega-menu {
 #landing #image img {
   width: 400px;
   position: relative;
-  animation: myImage var(--animation-alt-time) linear infinite;
+  animation: myImage 3s linear infinite;
 }
 #landing a {
   color: var(--main-color);
@@ -496,7 +496,7 @@ main #mega-menu {
   50% {
     top: -50px;
     width: 300px;
-    transform: rotate(20turn);
+    transform: rotate(5turn);
   }
 }
 @keyframes bouncing {
