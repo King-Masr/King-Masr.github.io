@@ -93,26 +93,26 @@ section#Counts label {
 #Counts input:not(:checked):hover + label::after {
   opacity: 0.3;
 }
-/* Generater section */
-section#Generater {
+/* checkboxs section */
+section#checkboxs {
   width: 45%;
   margin: 10px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: var(--main-border-radius);
 }
-section#Generater div {
+section#checkboxs div {
   min-width: 30%;
   max-width: 45%;
   margin: -5px auto;
   margin-left: 35%;
   transition: var(--main-transition);
 }
-section#Generater input {
+section#checkboxs input {
   -webkit-appearance: none;
   appearance: none;
 }
-section#Generater label {
+section#checkboxs label {
   display: inline-block;
   height: 32px;
   padding: 10px 15px;
@@ -120,7 +120,7 @@ section#Generater label {
   user-select: none;
   position: relative;
 }
-#Generater label::before {
+#checkboxs label::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -132,8 +132,8 @@ section#Generater label {
   background: white;
   border-radius: var(--alt-border-radius);
 }
-#Generater input:checked + label::after,
-#Generater input:not(:checked):hover + label::after {
+#checkboxs input:checked + label::after,
+#checkboxs input:not(:checked):hover + label::after {
   content: "";
   background-color: blue;
   width: 12px;
@@ -144,10 +144,10 @@ section#Generater label {
   border-radius: calc(var(--alt-border-radius) - 2px);
   transition: var(--main-transition);
 }
-#Generater input:not(:checked):hover + label::after {
+#checkboxs input:not(:checked):hover + label::after {
   opacity: 0.2;
 }
-#Generater input:checked + label {
+#checkboxs input:checked + label {
   color: blue;
 }
 #Generate {
