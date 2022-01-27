@@ -20,12 +20,12 @@ body {
   right: 3%;
 }
 /* Password section */
-section.Password {
+section#Password {
   width: 55%;
   margin: 20px auto;
   position: relative;
 }
-section.Password .Serial {
+section#Password #Serial {
   width: 80%;
   padding: 20px;
   background-color: #eee;
@@ -36,7 +36,7 @@ section.Password .Serial {
   font-weight: bold;
   height: 50px;
 }
-section.Password .Copy {
+section#Password #Copy {
   display: none;
   width: 30%;
   height: 20%;
@@ -54,7 +54,7 @@ section.Password .Copy {
   transition: var(--main-transition);
 }
 /* Counts section */
-section.Counts {
+section#Counts {
   min-width: 30%;
   max-width: calc(45% + 20px);
   margin: 10px auto;
@@ -62,24 +62,24 @@ section.Counts {
   background-color: thistle;
   border-radius: var(--main-border-radius);
 }
-section.Counts div {
+section#Counts div {
   display: inline-block;
   width: 15%;
   margin: 1.7%;
   padding: 0.1%;
 }
-section.Counts input {
+section#Counts input {
   -webkit-appearance: none;
   appearance: none;
 }
-section.Counts label {
+section#Counts label {
   padding: 10px 7px;
   cursor: pointer;
   user-select: none;
   position: relative;
 }
-section.Counts input:checked + label::after,
-section.Counts input:not(:checked):hover + label::after {
+#Counts input:checked + label::after,
+#Counts input:not(:checked):hover + label::after {
   content: "";
   width: 35px;
   height: 35px;
@@ -90,28 +90,29 @@ section.Counts input:not(:checked):hover + label::after {
   border-radius: var(--alt-border-radius);
   transition: var(--main-transition);
 }
-section.Counts input:not(:checked):hover + label::after {
+#Counts input:not(:checked):hover + label::after {
   opacity: 0.3;
 }
-section.Generater {
+/* Generater section */
+section#Generater {
   width: 45%;
   margin: 10px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: var(--main-border-radius);
 }
-section.Generater div {
+section#Generater div {
   min-width: 30%;
   max-width: 45%;
   margin: -5px auto;
   margin-left: 35%;
   transition: var(--main-transition);
 }
-section.Generater input {
+section#Generater input {
   -webkit-appearance: none;
   appearance: none;
 }
-section.Generater label {
+section#Generater label {
   display: inline-block;
   height: 32px;
   padding: 10px 15px;
@@ -119,7 +120,7 @@ section.Generater label {
   user-select: none;
   position: relative;
 }
-.Generater label::before {
+#Generater label::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -131,8 +132,8 @@ section.Generater label {
   background: white;
   border-radius: var(--alt-border-radius);
 }
-.Generater input:checked + label::after,
-.Generater input:not(:checked):hover + label::after {
+#Generater input:checked + label::after,
+#Generater input:not(:checked):hover + label::after {
   content: "";
   background-color: blue;
   width: 12px;
@@ -143,13 +144,13 @@ section.Generater label {
   border-radius: calc(var(--alt-border-radius) - 2px);
   transition: var(--main-transition);
 }
-.Generater input:not(:checked):hover + label::after {
+#Generater input:not(:checked):hover + label::after {
   opacity: 0.2;
 }
-.Generater input:checked + label {
+#Generater input:checked + label {
   color: blue;
 }
-.Generate {
+#Generate {
   display: inline-block;
   width: max-content;
   margin: 15px 35%;
@@ -162,6 +163,6 @@ section.Generater label {
   user-select: none;
   transition: var(--alt-transition);
 }
-.Generate:hover {
+#Generate:hover {
   background-color: #f0440e;
 }
