@@ -9,13 +9,13 @@
   </head>
   <body>
     <a href="/"><i class="fas fa-arrow-circle-right fa-2x"></i></a>
-    <section class="Password">
-      <div class="Serial">Your Password</div>
-      <div class="Copy">Click To Copy!</div>
+    <section id="Password">
+      <div id="Serial">Your Password</div>
+      <div id="Copy">Click To Copy!</div>
     </section>
-    <section class="Counts">
+    <section id="Counts">
       <div>
-        <input type="radio" name="NA" class="Count" onclick="CountID('C8')" id="C8">
+        <input type="radio" name="NA" onclick="CountID('C8')" id="C8">
         <label for="C8">&nbsp;8</label>
       </div>
       <div>
@@ -35,7 +35,7 @@
         <label for="C20">20</label>
       </div>
     </section>
-    <section class="Generater">
+    <section id="Generater">
       <div>
         <input type="checkbox" id="A">
         <label for="A">Capital</label>
@@ -57,7 +57,7 @@
         <label for="S">Serial Number</label>
       </div>
       <hr />
-      <span class="Generate" onclick="GeneratePass()">Generate</span>
+      <span id="Generate" onclick="GeneratePass()">Generate</span>
     </section>
     <!-- Messenger Code -->
     <div id="fb-root"></div>
