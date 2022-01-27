@@ -11,13 +11,13 @@
   [6] Loop x Count
   [7] Change Serial Element Content With The Serial Variable
 */
-let serialElement = document.querySelector(".Serial");
-let copyBtn = document.querySelector(".Copy");
-let checkBoxCapital = document.querySelector("#A");
-let checkBoxSmall = document.querySelector("#a");
-let checkBoxNumber = document.querySelector("#N");
-let checkBoxCode = document.querySelector("#C");
-let checkBoxSerial = document.querySelector("#S");
+let serialElement = document.getElementById("Serial");
+let copyBtn = document.getElementById("Copy");
+let checkBoxCapital = document.getElementById("A");
+let checkBoxSmall = document.getElementById("a");
+let checkBoxNumber = document.getElementById("N");
+let checkBoxCode = document.getElementById("C");
+let checkBoxSerial = document.getElementById("S");
 window.onload = function () {
   document.getElementById("C12").click();
   checkBoxSerial.onclick = function () {
