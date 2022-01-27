@@ -101,6 +101,11 @@ section#checkboxs {
   background-color: #f9f9f9;
   border-radius: var(--main-border-radius);
 }
+@media (max-width: 767px) {
+  section#checkboxs {
+    width: 65%;
+  }
+}
 section#checkboxs div {
   min-width: 30%;
   max-width: 45%;
