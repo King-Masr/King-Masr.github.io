@@ -81,7 +81,7 @@ function GeneratePass() {
     Characters += "0123456789";
   }
   if (checkBoxCode.checked === true) {
-    Characters += "`~!@#$%^&*()_+-=/<>|[],.:";
+    Characters += "`~!@#$%^&*()_+-=/|[],.:";
   }
   let Serial = "";
   if (checkBoxSerial.checked === false) {
