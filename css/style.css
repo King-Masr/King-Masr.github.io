@@ -25,6 +25,19 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--section-alt-background);
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-alt);
+}
 a {
   text-decoration: none;
 }
@@ -411,9 +424,9 @@ main #mega-menu {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
-#Certificates main:hover {
+/* #Certificates main:hover {
   grid-template-columns: repeat(auto-fill, minmax(555px, 1fr));
-}
+} */
 #Certificates #box {
   padding: 10px;
   background-color: white;
