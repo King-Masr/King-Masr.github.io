@@ -1,8 +1,8 @@
 window.onload = function () {
   let type = new TypeIt("#description", {
     strings: [
-      "I am a Web Developer Front End",
-      "My skills: HTML, CSS, JavaScript, Vue.js, JSON, PHP, MySQL, Python",
+      "I am a Full Stack Web Developer",
+      "My skills: HTML, CSS, JavaScript, PHP, MySQL, JSON, .....",
     ],
     speed: 300,
     waitUntilVisible: false,
