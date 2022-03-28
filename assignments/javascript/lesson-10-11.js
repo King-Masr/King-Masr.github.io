@@ -2,14 +2,13 @@
 let myName = "Aly";
 let myAge = 15;
 let myMessage = `Hello ${myName}, Your Age Is ${myAge}`;
-// alert(myMessage);
+alert(myMessage);
 // assignment 02
 let myElement = document.createElement("div");
 myElement.textContent = myMessage;
 document.body.appendChild(myElement);
 // assignment 03
 console.log(myMessage);
-console.log("####################");
 console.log(myMessage.slice(0, 10));
 console.log(myMessage.slice(11));
 // assignment 04
