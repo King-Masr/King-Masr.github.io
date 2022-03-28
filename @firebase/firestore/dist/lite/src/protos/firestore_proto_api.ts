@@ -337,7 +337,7 @@ export declare namespace firestoreV1ApiClientInterfaces {
   interface Status {
     code?: number;
     message?: string;
-    details?: Array<ApiClientObjectMap<any>>;
+    details?: ApiClientObjectMap<any>[];
   }
   interface StructuredQuery {
     select?: Projection;
