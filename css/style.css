@@ -420,7 +420,7 @@ main #mega-menu {
 #Certificates #box {
   padding: 10px;
   background-color: white;
-  box-shadow: 0 12px 20px #00000025, 0 2px 4px #00000020;
+  box-shadow: -3px 3px 15px 0px #00000025, 0 2px 4px #00000010;
 }
 #Certificates #box #image {
   width: 100%;
