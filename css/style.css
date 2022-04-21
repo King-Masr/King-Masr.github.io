@@ -1,9 +1,9 @@
 /* Global Variables */
 :root {
-  --main-color: #4db0ff;
-  --main-color-alt: #3585c7;
-  --section-background: #ececec;
-  --section-alt-background: #fbfbfb;
+  --main-color: #1877f2;
+  --main-color-alt: #156ad9;
+  --regular-background: #fbfbfb;
+  --lite-background: #9ebce369;
   --main-transition: 0.5s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -305,22 +305,12 @@ main #mega-menu {
   font-size: 40px;
   letter-spacing: -1px;
 }
-@media (max-width: 767px) {
-  #landing #text h1 {
-    font-size: 28px;
-  }
-}
 #landing #text p {
   color: #666;
   font-size: 25px;
   margin: 5px 0 0;
   line-height: 1.7;
   max-width: 500px;
-}
-@media (max-width: 767px) {
-  #landing #text p {
-    font-size: 18px;
-  }
 }
 @media (max-width: 991px) {
   #landing #text p {
