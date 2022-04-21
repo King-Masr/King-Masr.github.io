@@ -292,20 +292,20 @@ main #mega-menu {
   padding-bottom: 120px;
   min-height: calc(100vh - 72px);
 }
-#landing main #text {
+#landing main .info {
   flex: 1;
 }
 @media (max-width: 991px) {
-  #landing main #text {
+  #landing main .info {
     text-align: center;
   }
 }
-#landing #text h1 {
+#landing .info h1 {
   margin: 0;
   font-size: 40px;
   letter-spacing: -1px;
 }
-#landing #text p {
+#landing .info p {
   color: #666;
   font-size: 25px;
   margin: 5px 0 0;
@@ -313,20 +313,20 @@ main #mega-menu {
   max-width: 500px;
 }
 @media (max-width: 991px) {
-  #landing #text p {
+  #landing .info p {
     margin: 10px auto;
   }
 }
-#landing main #image {
+#landing main .image {
   width: 450px;
   padding: 10px;
 }
 @media (max-width: 991px) {
-  #landing main #image {
+  #landing main .image {
     display: none;
   }
 }
-#landing #image img {
+#landing .image img {
   width: 400px;
   position: relative;
   animation: showfast 1.5s ease;
@@ -353,7 +353,7 @@ main #mega-menu {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
-#projects #box {
+#projects .box {
   overflow: hidden;
   border-radius: 6px;
   background-color: white;
@@ -361,22 +361,23 @@ main #mega-menu {
   transition: transform var(--main-transition),
     box-shadow var(--main-transition);
 }
-#projects #box:hover {
+#projects .box:hover {
   transform: translateY(-30px);
   box-shadow: 0 2px 15px #00000035;
 }
-#projects #box img {
+#projects .box img {
   width: 100%;
   height: 200px;
   max-width: 100%;
 }
-#projects #box #content {
+#projects .box .content {
   padding: 20px;
+  height: calc(12pc - 5px);
 }
-#projects #box #content h3 {
+#projects .box .content h3 {
   margin: 0;
 }
-#projects #box #content p {
+#projects .box .content p {
   height: 97px;
   padding: 1px;
   color: #777;
@@ -385,21 +386,21 @@ main #mega-menu {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#projects #box #info {
+#projects .box .info {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #e6e6e7;
 }
-#projects #box #info a {
+#projects .box .info span {
   font-weight: bold;
   color: var(--main-color);
 }
-#projects #box #info i {
+#projects .box .info i {
   color: var(--main-color);
 }
-#projects #box:hover #info i {
+#projects .box:hover .info i {
   animation: arrowMove calc(var(--animation-time) + 0.8s) linear infinite;
 }
 /* Follow Me section */
@@ -417,17 +418,17 @@ main #mega-menu {
 /* #Certificates main:hover {
   grid-template-columns: repeat(auto-fill, minmax(555px, 1fr));
 } */
-#Certificates #box {
+#Certificates .box {
   padding: 10px;
   background-color: white;
   box-shadow: -3px 3px 15px 0px #00000025, 0 2px 4px #00000010;
 }
-#Certificates #box #image {
+#Certificates .box .image {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-#Certificates #box #image::before {
+#Certificates .box .image::before {
   top: 50%;
   width: 0;
   height: 0;
@@ -439,17 +440,17 @@ main #mega-menu {
   background-color: #ffffff30;
   transform: translate(-50%, -50%);
 }
-#Certificates #box #image:hover::before {
+#Certificates .box .image:hover::before {
   animation: flashing var(--animation-time);
 }
-#Certificates #box #image img {
+#Certificates .box .image img {
   width: 100%;
   max-width: 100%;
   min-width: 530px;
   user-select: none;
   transition: var(--main-transition);
 }
-#Certificates #box #image:hover img {
+#Certificates .box .image:hover img {
   transform: rotate(5deg) scale(1.1);
 }
 /* Animation */
