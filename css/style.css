@@ -449,7 +449,7 @@ main #mega-menu {
   user-select: none;
   transition: var(--main-transition);
 }
-@media (max-width: 700px) {
+@media (max-width: 560px) {
   #Certificates .box img {
     min-width: 350px;
   }
