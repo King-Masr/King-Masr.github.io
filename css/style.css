@@ -443,11 +443,16 @@ main #mega-menu {
 #Certificates .box .image:hover::before {
   animation: flashing var(--animation-time);
 }
-#Certificates .box .image img {
+#Certificates .box img {
   max-width: 100%;
   min-width: 530px;
   user-select: none;
   transition: var(--main-transition);
+}
+@media (max-width: 400px) {
+  #Certificates .box img {
+    min-width: 350px;
+  }
 }
 #Certificates .box .image:hover img {
   transform: rotate(5deg) scale(1.1);
