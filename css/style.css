@@ -2,11 +2,13 @@
 :root {
   --main-color: #1877f2;
   --main-color-alt: #156ad9;
+  --quality-color: #f44063;
+  --time-color: #009688;
+  --safe-color: #03a9f4;
   --regular-background: #fbfbfb;
-  --lite-background: #9ebce369;
+  --lite-background: #f0f1fb;
   --main-transition: 0.5s;
-  --main-padding-top: 100px;
-  --main-padding-bottom: 100px;
+  --main-padding: 100px;
   --transition-delay: 1s;
   --animation-time: 0.6s;
   --animation-alt-time: 5s;
@@ -275,15 +277,15 @@ main #mega-menu {
 }
 #landing::before {
   top: 0;
-  left: 0;
+  right: 0;
   content: "";
   width: 100%;
   z-index: -1;
   height: 100%;
   position: absolute;
-  transform: skewY(-6deg);
-  transform-origin: top left;
-  background-color: #ececec;
+  transform: skewY(6deg);
+  transform-origin: top right;
+  background-color: var(--lite-background);
 }
 #landing main {
   display: flex;
@@ -328,7 +330,8 @@ main #mega-menu {
 }
 #landing .image img {
   position: relative;
-  animation: showfast 1.5s ease;
+  border-radius: 50%;
+  animation: up-and-down 5s linear infinite;
 }
 #landing a {
   left: 50%;
@@ -344,8 +347,8 @@ main #mega-menu {
 /* Project section */
 #projects {
   position: relative;
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
 }
 #projects main {
   gap: 40px;
@@ -400,12 +403,12 @@ main #mega-menu {
 #projects .box:hover .info i {
   animation: arrowMove calc(var(--animation-time) + 0.8s) linear infinite;
 }
-/* Follow Me section */
+/* Certificates section */
 #Certificates {
   position: relative;
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
-  background-color: var(--section-background);
+  padding-top: var(--main-padding);
+  background-color: var(--lite-background);
+  padding-bottom: var(--main-padding);
 }
 #Certificates main {
   gap: 40px;
@@ -449,7 +452,126 @@ main #mega-menu {
 #Certificates .box .image:hover img {
   transform: rotate(5deg) scale(1.1);
 }
+/* Features Section */
+section#features {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--regular-background);
+}
+#features main {
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+#features main .box {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#features .box .image {
+  overflow: hidden;
+  position: relative;
+}
+#features .box .image::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+}
+#features .quality .image::before {
+  background-color: #f44064c4;
+}
+#features .time .image::before {
+  background-color: #009687c4;
+}
+#features .safe .image::before {
+  background-color: #03a9f4c4;
+}
+#features .box .image::after {
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0 170px 500px;
+  transition: var(--main-transition);
+  border-color: transparent transparent white transparent;
+}
+#features .box:hover .image::after {
+  border-width: 0 500px 170px 0;
+}
+#features .box h2 {
+  margin: auto;
+  font-size: 40px;
+  position: relative;
+  width: fit-content;
+}
+#features .box h2::before {
+  left: 15px;
+  content: "";
+  height: 5px;
+  bottom: -20px;
+  position: absolute;
+  width: calc(100% - 30px);
+}
+#features .quality h2::before {
+  background-color: var(--quality-color);
+}
+#features .time h2::before {
+  background-color: var(--time-color);
+}
+#features .safe h2::before {
+  background-color: var(--safe-color);
+}
+#features .box p {
+  color: #777;
+  padding: 25px;
+  line-height: 2;
+  margin: 30px 0;
+  font-size: 20px;
+}
+#features .box a {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 6px;
+  padding: 10px 30px;
+  width: fit-content;
+  margin: 0 auto 30px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: var(--main-transition);
+}
+#features .quality a {
+  color: var(--quality-color);
+  border-color: var(--quality-color);
+  background-image: linear-gradient(to right, var(--quality-color) 50%, white 50%);
+}
+#features .time a {
+  color: var(--time-color);
+  border-color: var(--time-color);
+  background-image: linear-gradient(to right, var(--time-color) 50%, white 50%);
+}
+#features .safe a {
+  color: var(--safe-color);
+  border-color: var(--safe-color);
+  background-image: linear-gradient(to right, var(--safe-color) 50%, white 50%);
+}
+#features .box:hover a {
+  color: white;
+  background-position: left bottom;
+}
 /* Animation */
+@keyframes up-and-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -50px;
+  }
+}
 @keyframes leftToRight {
   50% {
     left: 0;
@@ -474,21 +596,6 @@ main #mega-menu {
     width: 50%;
     height: 100%;
     border-radius: 0;
-  }
-}
-@keyframes showfast {
-  0% {
-    top: 0;
-    width: 0px;
-    height: 0px;
-  }
-  50% {
-    top: -100px;
-  }
-  100% {
-    top: 0;
-    width: 400px;
-    height: 400px;
   }
 }
 @keyframes bouncing {
