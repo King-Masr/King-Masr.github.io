@@ -25,7 +25,7 @@ html {
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: var(--section-alt-background);
+  background-color: var(--lite-background);
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -501,7 +501,7 @@ section#features {
   border-style: solid;
   border-width: 0 0 170px 500px;
   transition: var(--main-transition);
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent var(--lite-background) transparent;
 }
 #features .box:hover .image::after {
   border-width: 0 500px 170px 0;
