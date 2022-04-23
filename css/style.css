@@ -25,7 +25,7 @@ html {
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: var(--lite-background);
+  background-color: var(--regular-background);
 }
 ::-webkit-scrollbar {
   width: 10px;
