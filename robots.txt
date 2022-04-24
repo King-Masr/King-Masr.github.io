@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+Disallow: /V2/
+Disallow: /recherche
+Disallow: /articlepopup.php*
+Disallow: /recommander.php*
+Disallow: *filtreprix=*
+Disallow: *action=*
+Disallow: *artid=*
+sitemap : https://king-masr.github.io/sitemap.xml
