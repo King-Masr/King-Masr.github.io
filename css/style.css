@@ -292,7 +292,6 @@ main #mega-menu {
 }
 #landing main {
   display: flex;
-  overflow: hidden;
   align-items: center;
   padding-bottom: 120px;
   min-height: calc(100vh - 72px);
@@ -323,7 +322,6 @@ main #mega-menu {
   }
 }
 #landing main .image {
-  width: 450px;
   padding: 10px;
 }
 @media (max-width: 991px) {
