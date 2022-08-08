@@ -28,8 +28,8 @@ body {
   background-color: var(--regular-background);
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
@@ -369,11 +369,28 @@ main #mega-menu {
   box-shadow: 0 2px 15px #00000035;
 }
 #projects .box img {
-  max-width: 100%;
+  width: 100%;
+  min-height: 200px;
 }
 #projects .box .content {
   padding: 20px;
   height: calc(12pc - 5px);
+}
+#projects .box .soon {
+  position: relative;
+}
+#projects .box .soon::before {
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: "Soon!";
+  padding: 45% 40%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  background-color: #ffffffb3;
+  transform: translateX(-50%) translateY(-50%);
 }
 #projects .box .content h3 {
   margin: 0;
