@@ -92,8 +92,7 @@ main {
   border: 2px solid white;
   transition-delay: var(--transition-delay);
 }
-#mainTitle::before,
-#mainTitle::after {
+#mainTitle::before, #mainTitle::after {
   top: 50%;
   content: "";
   width: 12px;
@@ -196,8 +195,8 @@ nav > ul > li > a::before {
   height: 4px;
   left: -100%;
   position: absolute;
-  background-color: var(--main-color);
   transition: var(--main-transition);
+  background-color: var(--main-color);
 }
 nav > ul > li > a:hover {
   color: var(--main-color);
@@ -370,7 +369,6 @@ main #mega-menu {
 }
 #projects .box img {
   width: 100%;
-  min-height: 200px;
 }
 #projects .box .content {
   padding: 20px;
@@ -384,7 +382,7 @@ main #mega-menu {
   left: 50%;
   display: block;
   content: "Soon!";
-  padding: 45% 40%;
+  padding: 30% 33%;
   font-weight: bold;
   position: absolute;
   text-align: center;
