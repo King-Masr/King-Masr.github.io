@@ -75,7 +75,7 @@ main {
     width: 1170px;
   }
 }
-#mainTitle {
+.mainTitle {
   z-index: 1;
   font-size: 30px;
   cursor: default;
@@ -87,12 +87,12 @@ main {
   border: 2px solid black;
   transition: var(--main-transition);
 }
-#mainTitle:hover {
+.mainTitle:hover {
   color: white;
   border: 2px solid white;
   transition-delay: var(--transition-delay);
 }
-#mainTitle::before, #mainTitle::after {
+.mainTitle::before, .mainTitle::after {
   top: 50%;
   content: "";
   width: 12px;
@@ -102,17 +102,17 @@ main {
   transform: translateY(-50%);
   background-color: var(--main-color);
 }
-#mainTitle::before {
+.mainTitle::before {
   left: -30px;
 }
-#mainTitle::after {
+.mainTitle::after {
   right: -30px;
 }
-#mainTitle:hover::before {
+.mainTitle:hover::before {
   z-index: -1;
   animation: leftToRight var(--animation-time) linear forwards;
 }
-#mainTitle:hover::after {
+.mainTitle:hover::after {
   z-index: -1;
   animation: rightToLift var(--animation-time) linear forwards;
 }
