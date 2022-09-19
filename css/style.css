@@ -461,7 +461,6 @@ main #mega-menu {
   z-index: 2;
   content: "\f030";
   position: absolute;
-  background-color: #ffffff30;
   transform: translate(-50%, -50%);
 }
 #Certificates .box .image:hover::before {
