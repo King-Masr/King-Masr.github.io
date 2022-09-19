@@ -470,10 +470,6 @@ main #mega-menu {
 #Certificates .box img {
   max-width: 100%;
   user-select: none;
-  transition: var(--main-transition);
-}
-#Certificates .box .image:hover img {
-  transform: rotate(5deg) scale(1.1);
 }
 /* Features Section */
 section#features {
