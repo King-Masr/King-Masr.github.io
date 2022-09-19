@@ -461,6 +461,7 @@ main #mega-menu {
   z-index: 2;
   content: "\f030";
   position: absolute;
+  font-family: "FontAwesome";
   transform: translate(-50%, -50%);
 }
 #Certificates .box .image:hover::before {
@@ -648,12 +649,11 @@ section#features {
   }
 }
 @keyframes flashing {
-  0%,
   40% {
-    opacity: 1;
+    opacity: 0.1;
   }
   99% {
-    opacity: 0;
+    opacity: 0.5;
     width: 200%;
     height: 200%;
   }
