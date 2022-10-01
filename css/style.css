@@ -357,7 +357,9 @@ main #mega-menu {
 }
 #projects .box {
   overflow: hidden;
+  position: relative;
   border-radius: 6px;
+  padding-bottom: 59px;
   background-color: white;
   box-shadow: 0 2px 15px #00000025;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
@@ -402,9 +404,12 @@ main #mega-menu {
   text-overflow: ellipsis;
 }
 #projects .box .info {
+  bottom: 0;
   padding: 20px;
   display: flex;
+  position: absolute;
   align-items: center;
+  width: -webkit-fill-available;
   justify-content: space-between;
   border-top: 1px solid #e6e6e7;
 }
