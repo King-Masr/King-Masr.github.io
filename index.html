@@ -67,7 +67,7 @@
       <main>
         <section class="info">
           <h1>Hello. I am Aly Ahmed</h1>
-          <p id="description"></p>
+          <p id="description">I am a Full Stack Developer.</p>
         </section>
         <section class="image">
           <img src="imgs/aly-ahmed.webp" alt="landing image" width="414" height="414">
@@ -232,29 +232,27 @@
     </section>
     <span id="up"><i class="fa-solid fa-angle-up"></i></span>
     <footer></footer>
-    <!-- Messenger Code -->
     <div id="fb-root"></div>
-    <!-- Your code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "103839318756415");
+      chatbox.setAttribute("page_id", "109599243728023");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
-    <!-- Facebook SDK code -->
+    <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
-          version          : 'v12.0'
+          version          : 'v15.0'
         });
       };
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
