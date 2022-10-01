@@ -36,7 +36,7 @@
           <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#Certificates">Certificates</a></li>
-            <li><a href="#features">Features</a></li>
+            <li><a href="#mynfts">My NFTs</a></li>
             <li>
               <a href="#">Other Links</a>
               <section id="mega-menu">
@@ -175,6 +175,30 @@
             <img src="imgs/Certificates/sololearn-php.webp" alt="Sololearn php" width="auto" height="auto">
           </section>
         </section>
+      </main>
+    </section>
+    <section id="mynfts">
+      <h2 class="mainTitle">My NFTs</h2>
+      <main>
+        <div id="mintable-widget"></div>
+        <script>
+          (function (w, d, s, o, f, js, fjs) {
+            w["Mintable_Widget"] = o;
+            w[o] = w[o] ||
+              function () {
+                (w[o].q = w[o].q || []).push(arguments);
+              };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+          })(window, document, "script", "widget", "https://unpkg.com/mintable-widget/dist/index.js");
+          widget("init", { targetElementId: "mintable-widget" });
+          widget("shownft", {
+            size:"full", ids:["art/listing/yN-h3lnf6GoM6Pw", "art/listing/n8W9yT7zNmLMmLS", "art/listing/IchB0kJ50SjwJFO", "art/listing/yrQAlTbzKQ0hoZl", "art/listing/tyPVoMunay9zJ-g", "art/listing/hloyQ7YbqzMmQn3"], fontFamily:"Verdana", backgroundColor:"#ffffff", fontColor:"#2d2d2d", subtitleColor:"#727272", buttonColor:"#1877f2", buttonTextColor:"#ffffff", boxShadow:true
+          });
+        </script>
       </main>
     </section>
     <section id="features">
