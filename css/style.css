@@ -355,7 +355,7 @@ main #mega-menu {
 #landing .image img {
   position: relative;
   border-radius: 50%;
-  animation: up-and-down 5s linear infinite;
+  /* animation: up-and-down 5s linear infinite; */
 }
 #landing a {
   left: 50%;
@@ -366,7 +366,7 @@ main #mega-menu {
   transition: var(--main-transition);
 }
 #landing a > i {
-  animation: bouncing 1.5s infinite;
+  /* animation: bouncing 1.5s infinite; */
 }
 /* Project section */
 #projects {
