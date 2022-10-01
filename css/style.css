@@ -479,11 +479,28 @@ main #mega-menu {
   max-width: 100%;
   user-select: none;
 }
+/* My NFTs Section */
+section#mynfts {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--regular-background);
+}
+#mynfts ._2F2mNUai89UJenlaJB1dFC {
+  border-radius: 6px;
+}
+#mynfts ._28Rs5_jt4Cc-XOnzQ_kUm {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#mynfts img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
 /* Features Section */
 section#features {
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
-  background-color: var(--regular-background);
+  background-color: var(--lite-background);
 }
 #features main {
   gap: 40px;
@@ -493,6 +510,7 @@ section#features {
 #features main .box {
   text-align: center;
   border: 1px solid #ccc;
+  background-color: var(--regular-background);
 }
 #features .box .image {
   overflow: hidden;
