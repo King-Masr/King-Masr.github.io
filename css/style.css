@@ -9,7 +9,6 @@
   --lite-background: #f0f1fb;
   --main-transition: 0.5s;
   --main-padding: 100px;
-  --transition-delay: 1s;
   --animation-time: 0.6s;
   --animation-alt-time: 5s;
   --icon-hight: 10%;
@@ -79,18 +78,20 @@ main {
   z-index: 1;
   font-size: 30px;
   cursor: default;
+  overflow: hidden;
   user-select: none;
   position: relative;
   padding: 10px 20px;
   width: fit-content;
+  border-radius: 6px;
   margin: 0 auto 80px;
   border: 2px solid black;
   transition: var(--main-transition);
 }
 .mainTitle:hover {
   color: white;
+  transition-delay: 0.8s;
   border: 2px solid white;
-  transition-delay: var(--transition-delay);
 }
 .mainTitle::before, .mainTitle::after {
   top: 50%;
@@ -115,6 +116,29 @@ main {
 .mainTitle:hover::after {
   z-index: -1;
   animation: rightToLift var(--animation-time) linear forwards;
+}
+#up {
+  right: 25px;
+  width: 35px;
+  height: 35px;
+  bottom: 25px;
+  display: none;
+  z-index: 9999;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  background: linear-gradient(to right, #1368cc 50%, var(--main-color) 50%) no-repeat scroll right bottom/210% 100% var(--main-color);
+}
+#up:hover {
+  background-position: left bottom;
+}
+#up i {
+  color: #fff;
 }
 /* Website Header */
 header {
@@ -628,6 +652,8 @@ section#features {
     width: 50%;
     height: 100%;
     border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 }
 @keyframes rightToLift {
@@ -641,6 +667,8 @@ section#features {
     width: 50%;
     height: 100%;
     border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 @keyframes bouncing {
