@@ -523,7 +523,10 @@ section#mynfts {
   border-top-right-radius: 6px;
 }
 #mynfts ._28Rs5_jt4Cc-XOnzQ_kUm {
+  width: 400px;
   height: 580px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 /* Features Section */
 section#features {
