@@ -517,6 +517,8 @@ section#mynfts {
   border-bottom-right-radius: 6px;
 }
 #mynfts img {
+  width: 400px;
+  height: 400px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
