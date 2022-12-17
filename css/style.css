@@ -516,11 +516,14 @@ section#mynfts {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-#mynfts img {
+#mynfts img:not(._3kwZ_6AfTdGeKBh8H1qHaY) {
   width: 400px;
   height: 400px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+}
+#mynfts ._28Rs5_jt4Cc-XOnzQ_kUm {
+  height: 580px;
 }
 /* Features Section */
 section#features {
