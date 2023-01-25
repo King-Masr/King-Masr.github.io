@@ -1,3 +1,10 @@
+let myImgs = document.getElementsByTagName("img");
+let imgs = Array.from(myImgs);
+imgs.forEach((ele) => {
+  ele.onerror = function () {
+    this.src = "imgs/image-not-found.png";
+  };
+});
 window.onload = function () {
   let type = new TypeIt("#description", {
     strings: [
