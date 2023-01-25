@@ -389,8 +389,23 @@ main #mega-menu {
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 #projects .box:hover {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
   box-shadow: 0 2px 15px #00000035;
+}
+#projects .box:hover::before {
+  transform: translateY(0);
+}
+#projects .telegram-bot::before {
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  content: "Telegram Bot";
+  background-color: #0088cc;
+  transform: translateY(-40px);
+  border-bottom-left-radius: 6px;
+  transition: var(--main-transition);
 }
 #projects .box img {
   width: 100%;
