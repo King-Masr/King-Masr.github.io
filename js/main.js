@@ -1,3 +1,21 @@
+function loading() {
+  document.body.style.height = "100vh";
+  let sectionLoading = document.createElement("section");
+  sectionLoading.id = "loading";
+  let loadingContainer = document.createElement("main");
+  let sectionMessage = document.createElement("section");
+  sectionMessage.id = "message";
+  let myImg = document.createElement("img");
+  myImg.src = "imgs/loader-flat.gif";
+  let myParagraph = document.createElement("p");
+  myParagraph.innerText = "Wait for moment...";
+  sectionMessage.appendChild(myImg);
+  sectionMessage.appendChild(myParagraph);
+  loadingContainer.appendChild(sectionMessage);
+  sectionLoading.appendChild(loadingContainer);
+  document.body.appendChild(sectionLoading);
+}
+loading();
 let myImgs = document.getElementsByTagName("img");
 let imgs = Array.from(myImgs);
 imgs.forEach((ele) => {
@@ -6,6 +24,8 @@ imgs.forEach((ele) => {
   };
 });
 window.onload = function () {
+  document.getElementById("loading").remove();
+  document.body.removeAttribute("style");
   let type = new TypeIt("#description", {
     strings: [
       "I am a Full Stack Developer.",
