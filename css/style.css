@@ -699,6 +699,13 @@ section#testimonials {
   box-shadow: 0 2px 4px #0000003d;
   background-color: var(--lite-background);
 }
+#testimonials .box img {
+  top: -50px;
+  right: -10px;
+  position: absolute;
+  border-radius: 50%;
+  border: 10px solid var(--regular-background);
+}
 /* Animation */
 @keyframes up-and-down {
   0%, 100% {
