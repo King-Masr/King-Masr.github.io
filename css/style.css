@@ -415,9 +415,6 @@ main #mega-menu {
   transform: translateY(-20px);
   box-shadow: 0 2px 15px #00000035;
 }
-#projects .box:hover::before {
-  transform: translateY(0);
-}
 #projects .live::before {
   top: 0;
   left: 0;
@@ -430,9 +427,9 @@ main #mega-menu {
   border-bottom-left-radius: 6px;
   transition: var(--main-transition);
 }
-/* #projects .box:hover::after {
+#projects .live:hover::before {
   transform: translateY(0);
-} */
+}
 #projects .telegram-bot::after {
   top: 0;
   right: 0;
@@ -444,6 +441,9 @@ main #mega-menu {
   transform: translateY(-40px);
   border-bottom-left-radius: 6px;
   transition: var(--main-transition);
+}
+#projects .telegram-bot:hover::after {
+  transform: translateY(0);
 }
 #projects .box img {
   width: 100%;
