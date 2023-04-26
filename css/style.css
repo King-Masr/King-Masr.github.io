@@ -74,6 +74,9 @@ main {
     width: 1170px;
   }
 }
+.ar {
+  direction: rtl;
+}
 section#loading {
   top: 0;
   left: 0;
