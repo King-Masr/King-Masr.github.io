@@ -678,6 +678,24 @@ section#features {
   color: white;
   background-position: left bottom;
 }
+/* Testimonials Section */
+section#testimonials {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--regular-background);
+}
+#testimonials main {
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+#testimonials .box {
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px #000;
+  background-color: var(--lite-background);
+}
 /* Animation */
 @keyframes up-and-down {
   0%, 100% {
