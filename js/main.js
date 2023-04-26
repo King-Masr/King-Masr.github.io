@@ -24,7 +24,7 @@ imgs.forEach((ele) => {
   };
 });
 window.onload = function () {
-  document.getElementById("loading").remove();
+  // document.getElementById("loading").remove();
   document.body.removeAttribute("style");
   let type = new TypeIt("#description", {
     strings: [
