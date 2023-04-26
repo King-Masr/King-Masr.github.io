@@ -415,10 +415,10 @@ main #mega-menu {
   transform: translateY(-20px);
   box-shadow: 0 2px 15px #00000035;
 }
-#projects .box:hover::before {
+#projects .box:hover::after {
   transform: translateY(0);
 }
-#projects .telegram-bot::before {
+#projects .telegram-bot::after {
   top: 0;
   right: 0;
   padding: 10px;
