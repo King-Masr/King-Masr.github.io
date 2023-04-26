@@ -424,7 +424,7 @@ main #mega-menu {
   content: "Live";
   background-color: #18cc00;
   transform: translateY(-40px);
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   transition: var(--main-transition);
 }
 #projects .live:hover::before {
