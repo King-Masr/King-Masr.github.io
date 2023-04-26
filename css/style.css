@@ -415,9 +415,24 @@ main #mega-menu {
   transform: translateY(-20px);
   box-shadow: 0 2px 15px #00000035;
 }
-#projects .box:hover::after {
+#projects .box:hover::before {
   transform: translateY(0);
 }
+#projects .live::before {
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  content: "Live";
+  background-color: #18cc00;
+  transform: translateY(-40px);
+  border-bottom-left-radius: 6px;
+  transition: var(--main-transition);
+}
+/* #projects .box:hover::after {
+  transform: translateY(0);
+} */
 #projects .telegram-bot::after {
   top: 0;
   right: 0;
