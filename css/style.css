@@ -706,6 +706,24 @@ section#testimonials {
   border-radius: 50%;
   border: 10px solid var(--regular-background);
 }
+#testimonials .box h3 {
+  margin: 0 0 10px;
+  color: var(--main-color);
+}
+#testimonials .box span {
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+}
+#testimonials .box .filled {
+  color: #ffc107;
+}
+#testimonials .box p {
+  line-height: 1.5;
+  color: #4e4e4e;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 /* Animation */
 @keyframes up-and-down {
   0%, 100% {
