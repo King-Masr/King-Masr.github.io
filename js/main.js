@@ -1,6 +1,7 @@
 let myImgs = document.getElementsByTagName("img");
 let imgs = Array.from(myImgs);
 imgs.forEach((ele) => {
+  if (ele.alt == undefined) ele.alt = "Unknown";
   ele.onerror = function () {
     this.src = "imgs/image-not-found.png";
   };
