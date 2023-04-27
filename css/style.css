@@ -177,6 +177,7 @@ section#loading {
 /* Website Header */
 header {
   cursor: default;
+  -webkit-user-select: none;
   user-select: none;
   position: relative;
   background-color: white;
@@ -233,6 +234,7 @@ nav > ul > li > a {
   color: black;
   padding: 0 30px;
   overflow: hidden;
+  -webkit-user-select: none;
   user-select: none;
   position: relative;
   align-items: center;
@@ -554,6 +556,7 @@ section#certificates {
 }
 #certificates .box img {
   max-width: 100%;
+  -webkit-user-select: none;
   user-select: none;
 }
 /* My NFTs Section */
