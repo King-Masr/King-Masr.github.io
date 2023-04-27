@@ -324,7 +324,7 @@ main #mega-menu {
   margin-right: 10px;
 }
 /* Landing section */
-#landing {
+section#landing {
   position: relative;
 }
 #landing::before {
@@ -341,8 +341,9 @@ main #mega-menu {
 }
 #landing main {
   display: flex;
+  padding-top: 100px;
   align-items: center;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   min-height: calc(100vh - 72px);
 }
 #landing main .info {
@@ -395,7 +396,7 @@ main #mega-menu {
   animation: bouncing 1.5s infinite;
 }
 /* Project section */
-#projects {
+section#projects {
   position: relative;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
@@ -504,28 +505,28 @@ main #mega-menu {
   animation: arrowMove calc(var(--animation-time) + 0.8s) linear infinite;
 }
 /* Certificates section */
-#Certificates {
+section#certificates {
   position: relative;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
   background-color: var(--lite-background);
 }
-#Certificates main {
+#certificates main {
   gap: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
-#Certificates .box {
+#certificates .box {
   padding: 10px;
   background-color: white;
   box-shadow: -3px 3px 15px 0px #00000025, 0 2px 4px #00000010;
 }
-#Certificates .box .image {
+#certificates .box .image {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-#Certificates .box .image::before {
+#certificates .box .image::before {
   top: 50%;
   left: 50%;
   z-index: 2;
@@ -537,10 +538,10 @@ main #mega-menu {
   background-color: #fff;
   transform: translate(-50%, -50%);
 }
-#Certificates .box .image:hover::before {
+#certificates .box .image:hover::before {
   animation: flashing var(--animation-time);
 }
-#Certificates .box img {
+#certificates .box img {
   max-width: 100%;
   user-select: none;
 }
