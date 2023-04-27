@@ -10,7 +10,7 @@ var chatbox = document.getElementById("fb-customer-chat");
 chatbox.setAttribute("page_id", "109599243728023");
 chatbox.setAttribute("attribution", "biz_inbox");
 window.onload = function () {
-  document.getElementById("loading").remove();
+  // document.getElementById("loading").remove();
   document.body.removeAttribute("style");
   let type = new TypeIt("#description", {
     strings: [
