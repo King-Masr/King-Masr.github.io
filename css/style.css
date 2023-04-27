@@ -163,9 +163,9 @@ section#loading {
   border-radius: 6px;
   align-items: center;
   justify-content: center;
-  transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
   background: linear-gradient(to right, #1368cc 50%, var(--main-color) 50%) no-repeat scroll right bottom/210% 100% var(--main-color);
 }
 #up:hover {
