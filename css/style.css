@@ -112,6 +112,7 @@ section#loading {
   font-size: 30px;
   cursor: default;
   overflow: hidden;
+  -webkit-user-select: none;
   user-select: none;
   position: relative;
   padding: 10px 20px;
@@ -526,6 +527,8 @@ section#certificates {
 }
 #certificates .box {
   padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: white;
   box-shadow: -3px 3px 15px 0px #00000025, 0 2px 4px #00000010;
 }
