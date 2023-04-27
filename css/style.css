@@ -94,6 +94,9 @@ section#loading {
   align-items: center;
   flex-direction: column;
 }
+#loading i {
+  color: var(--main-color);
+}
 #loading p {
   font-size: 17px;
 }
