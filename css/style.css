@@ -181,9 +181,9 @@ header {
   user-select: none;
   position: relative;
   background-color: white;
-  box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
   -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
 }
 header main {
   display: flex;
