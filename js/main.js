@@ -5,6 +5,9 @@ imgs.forEach((ele) => {
     this.src = "imgs/image-not-found.png";
   };
 });
+var chatbox = document.getElementById("fb-customer-chat");
+chatbox.setAttribute("page_id", "109599243728023");
+chatbox.setAttribute("attribution", "biz_inbox");
 window.onload = function () {
   document.getElementById("loading").remove();
   document.body.removeAttribute("style");
@@ -23,6 +26,19 @@ window.onload = function () {
     loop: true,
     loopDelay: 1000,
   }).go();
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 };
 let upBtn = document.getElementById("up");
 window.onscroll = function () {
