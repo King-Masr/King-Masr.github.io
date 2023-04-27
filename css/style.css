@@ -561,6 +561,12 @@ section#certificates {
   -webkit-user-select: none;
   user-select: none;
 }
+/* Medium Mobile Screen */
+@media (max-width: 400px) {
+  #certificates .box img {
+    width: 300px;
+  }
+}
 /* My NFTs Section */
 section#mynfts {
   padding-top: var(--main-padding);
