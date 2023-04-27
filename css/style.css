@@ -42,6 +42,13 @@ body {
 img {
   display: block;
 }
+/* xSmall Screen */
+@media (max-width: 600px) {
+  img {
+    width: auto;
+    height: auto;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -407,6 +414,7 @@ section#projects {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 #projects .box {
+  width: 255px;
   overflow: hidden;
   position: relative;
   border-radius: 6px;
@@ -450,7 +458,7 @@ section#projects {
   transform: translateY(0);
 }
 #projects .box img {
-  width: 100%;
+  max-width: 100%;
 }
 #projects .box .content {
   padding: 20px;
