@@ -528,12 +528,12 @@ section#certificates {
 }
 #certificates .box .image::before {
   top: 50%;
+  width: 0;
+  height: 0;
   left: 50%;
   z-index: 2;
   opacity: 0;
   content: "";
-  width: 100%;
-  height: 100%;
   position: absolute;
   background-color: #fff;
   transform: translate(-50%, -50%);
