@@ -81,6 +81,12 @@ main {
     width: 1170px;
   }
 }
+/* X Large Screen */
+@media (min-width: 2000px) {
+  main {
+    width: 1900px;
+  }
+}
 .ar {
   direction: rtl;
 }
