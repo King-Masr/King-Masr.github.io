@@ -527,6 +527,7 @@ section#certificates {
   gap: 40px;
   display: grid;
   justify-items: center;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 #certificates .box {
