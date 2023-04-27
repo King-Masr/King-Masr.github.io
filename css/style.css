@@ -94,9 +94,6 @@ section#loading {
   align-items: center;
   flex-direction: column;
 }
-#loading img {
-  width: 80px;
-}
 #loading p {
   font-size: 17px;
 }
