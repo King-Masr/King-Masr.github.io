@@ -42,13 +42,6 @@ body {
 img {
   display: block;
 }
-/* xSmall Screen */
-@media (max-width: 600px) {
-  img {
-    width: auto;
-    height: auto;
-  }
-}
 a {
   text-decoration: none;
 }
@@ -572,6 +565,13 @@ section#certificates {
 @media (max-width: 400px) {
   #certificates .box img {
     width: 300px;
+  }
+}
+/* Large Mobile Screen */
+@media (max-width: 600px) {
+  #certificates .box img {
+    width: auto;
+    height: auto;
   }
 }
 /* My NFTs Section */
