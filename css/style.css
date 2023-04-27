@@ -595,6 +595,7 @@ section#features {
 #features main {
   gap: 40px;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 #features main .box {
@@ -711,6 +712,7 @@ section#testimonials {
 }
 #testimonials .box {
   padding: 20px;
+  max-width: 360px;
   position: relative;
   border-radius: 6px;
   box-shadow: 0 2px 4px #0000003d;
