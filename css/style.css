@@ -371,9 +371,9 @@ section#landing {
 #landing .info p {
   color: #666;
   font-size: 25px;
-  margin: 5px 0 0;
   line-height: 1.7;
   max-width: 500px;
+  margin: 5px 0 30px;
 }
 @media (max-width: 991px) {
   #landing .info p {
