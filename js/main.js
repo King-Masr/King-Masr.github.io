@@ -6,9 +6,9 @@ window.onload = function () {
   document.body.removeAttribute("style");
   let type = new TypeIt("#description", {
     strings: [
-      "I am a Full Stack Developer.",
-      "I have over 7 years of experience in Web Development.",
-      "My skills include proficiency in HTML, CSS, JavaScript, PHP, MySQL, Laravel, Ajax, JSON, and more.",
+      "I am a Software Engineer.",
+      "I have over 7 years of experience in Web Development and Telegram Bot Development.",
+      "My Skills include proficiency in HTML, CSS, JavaScript, PHP, MySQL, Laravel, Ajax, JSON, and more.",
     ],
     speed: 100,
     waitUntilVisible: true,
