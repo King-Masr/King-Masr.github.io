@@ -371,9 +371,9 @@ section#landing {
 #landing .info p {
   color: #666;
   font-size: 25px;
-  margin: 5px 0 0;
   line-height: 1.7;
   max-width: 500px;
+  margin: 5px 0 30px;
 }
 @media (max-width: 991px) {
   #landing .info p {
@@ -393,7 +393,7 @@ section#landing {
   border-radius: 50%;
   animation: up-and-down 5s linear infinite;
 }
-#landing a {
+#landing a.projects {
   left: 50%;
   bottom: 30px;
   position: absolute;
@@ -401,7 +401,7 @@ section#landing {
   transform: translateX(-50%);
   transition: var(--main-transition);
 }
-#landing a > i {
+#landing a.projects > i {
   animation: bouncing 1.5s infinite;
 }
 /* Project section */

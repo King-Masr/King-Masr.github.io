@@ -7,17 +7,17 @@ window.onload = function () {
   let type = new TypeIt("#description", {
     strings: [
       "I am a Full Stack Developer.",
-      "I have experience in PHP for 6 years.",
-      "My Skills: HTML, CSS, JavaScript, PHP, MySQL, Laravel, Ajax, JSON, and more...",
+      "I have over 7 years of experience in Web Development.",
+      "My skills include proficiency in HTML, CSS, JavaScript, PHP, MySQL, Laravel, Ajax, JSON, and more.",
     ],
-    speed: 1000,
+    speed: 100,
     waitUntilVisible: true,
     breakLines: false,
-    startDelay: 500,
-    deleteSpeed: 100,
+    startDelay: 700,
+    deleteSpeed: 30,
     nextStringDelay: 5000,
     loop: true,
-    loopDelay: 1000,
+    loopDelay: 2000,
   }).go();
   window.fbAsyncInit = function() {
     FB.init({
