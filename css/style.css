@@ -581,19 +581,20 @@ section#experiences {
   background-color: var(--regular-background);
 }
 #experiences main {
+  gap: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #experiences #experiences-line {
   width: 4px;
-  height: 300px;
+  height: 850px;
   border-radius: 6px;
   background-color: black;
 }
 #experiences #experiences-list {
-  display: flex;
   gap: 40px;
+  display: flex;
   flex-direction: column;
 }
 #experiences .experiences-box {
@@ -605,13 +606,20 @@ section#experiences {
   background-color: var(--lite-background);
 }
 #experiences .experiences-box::before {
-  width: ;
-  top: -50px;
-  right: -10px;
+  top: 50%;
+  content: "";
+  width: 12px;
+  content: "";
+  left: -28px;
+  height: 12px;
   position: absolute;
   border-radius: 50%;
-  border: 10px solid var(--regular-background);
-  content: "";
+  background-color: black;
+}
+#experiences .experiences-box p {
+  max-height: 55px;
+  overflow: hidden;
+  margin-bottom: 0;
 }
 /* Features Section */
 section#features {
